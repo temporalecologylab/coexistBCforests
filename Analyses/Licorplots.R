@@ -6,7 +6,7 @@ library(vegan)
 library(ape)
 library(dplyr)
 
-LiCordatafinal <- read_csv("LiCordatafinal.csv")
+LiCordatafinal <- read.csv("LiCordatafinal.csv")
 
 #fixeserrors in species' names
 LiCordatafinal$Species <- gsub(x= LiCordatafinal$Species, pattern = "lONSOF", replacement = "LONSOF")
@@ -25,11 +25,15 @@ LiCordata_adult[, c(3:9)] <- sapply(LiCordata_adult[, c(3:9)], as.numeric)
          
 #don't quite know what this plot shows          
 pairs(LiCordata_adult[, c(3:9)], 
-      lower.panel= NULL)
+      lower.panel= NULL) # this shows how correlated each variable is to each other one ... for example in row 3, column 4 you see PFD.FR versus PFD.G
 
 #creating a pca
 LiCordata_adult.pca <- princomp(LiCordata_adult[,3:9])
 biplot(LiCordata_adult.pca)
+
+#looking at pcas
+summary(LiCordata_adult.pca) ## this suggests to me something a little weird given all the variance is explained in first axis
+summary(princomp(LiCordata_adult[,4:8])) # same thing (the pairs plot explains this -- everything is tightly correlated)
 
 #creating a rda for site differences 
 LiCordata_adult.rda <- rda(LiCordata_adult[,3:9])
