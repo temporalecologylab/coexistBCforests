@@ -230,10 +230,20 @@ legend(5, 5,
 
 #Creating dataset for boxplots
 Boxplot.Species <- LiCordata_adult[,c(3:9, 11)]
+Boxplot.Species2 <- as.data.frame(Boxplot.Species)
 Boxplot.site <- LiCordata_adult[,c(2,3:9)]
 Boxplot.Day <- LiCordata_adult[,c(3:9, 10)]
 LiCordata_adult[, 10] <- sapply(LiCordata_adult[, 10], as.character)
 Boxplot.Day[,8] <- sapply(Boxplot.Day[,8], as.character)
+
+
+
+for (i in 1:2){
+  plotname <- paste("boxplots_for_species_vs_FD_readings",colnames(Boxplot.Species2[i]),".pdf")
+  pdf(file= plotname)
+  ggplot(Boxplot.Species2, aes(x=specieslatbi, y=Boxplot.Species2[,i])) + geom_boxplot()
+  dev.off()
+} 
 
 
 
