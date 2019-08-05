@@ -220,10 +220,10 @@ for (i in 1:length(path)){
  colnames(k2) <- colnames(k1)
  row.names(k2) <- rownames(k1)
 for (n in 1:length(path2)){ 
-  k2[,n]<- as.matrix(l3[,n] - k1[,n])
+  k2[,n]<- as.matrix(k1[,n] - l3[,n])
 }  
   community_matrix <- as.matrix(k2) #creates matrix
-  example_NMDS=metaMDS(community_matrix, k=3, wascores = TRUE) #runs NMDS
+  example_NMDS=metaMDS(community_matrix, k=3) #runs NMDS
   plotname <- paste("NMDS_ambspie",path[i],".pdf", sep="") #plotseach site seperately 
   pdf(file= plotname)
   stressplot(example_NMDS)
