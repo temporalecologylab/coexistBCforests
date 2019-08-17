@@ -1,6 +1,6 @@
 rm(list=ls()) # remove everything currently held in the R memory
 options(stringsAsFactors=FALSE)
-setwd("~/Documents/Ph.D/LI-COR Data (Manning Park)")
+setwd("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/input")
 
 library(vegan)
 library(tidyverse)
@@ -47,6 +47,8 @@ k <- k[,-1]
 
 path <- unique(LiCordata_adult$Site)
 
+setwd("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/output")
+
 for (i in 1:length(path)){
   k1 <- select(k, contains(path[i])) #selects variables that contain the sites 
   k1 <- na.omit(k1) #omits NAs
@@ -65,6 +67,8 @@ for (i in 1:length(path)){
 ###########################################
 #Comparing sites across species 
 ##########################################
+
+setwd("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/input")
 
 LiCordatafinal <- read_csv("LiCordatafinal.csv")
 
@@ -95,6 +99,7 @@ j <- j[,-2]
 path <- unique(LiCordata_adult$specieslatbi)
 path <- path[c(-1, -5)]
 
+setwd("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/output")
 
 for (i in 1:length(path)){
   j1 <- select(j,j, contains(path[i]))# selects species column and seperates readings by species
@@ -118,6 +123,7 @@ for (i in 1:length(path)){
 #########################################################
 #ambeint readings
 ########################################################
+setwd("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/input")
 
 LiCordatafinal <- read_csv("LiCordatafinal.csv")
 
@@ -139,6 +145,8 @@ l <- as.data.frame(l)
 rownames(l) <- make.names(l$l)
 l <- l[,-1]
 
+setwd("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/output")
+
 path <- unique(LiCordata_adult$Site)
 
 for (i in 1:length(path)){
@@ -159,6 +167,7 @@ for (i in 1:length(path)){
 #########################################################
 #species-ambeint readings
 ########################################################
+setwd("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/input")
 
 LiCordatafinal <- read_csv("LiCordatafinal.csv")
 
@@ -207,6 +216,7 @@ rownames(k) <- make.names(k$k)
 k <- k[,-1]
 l2 <- as.data.frame(l2)
 
+setwd("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/output")
 
 path <- unique(LiCordata_adult1$Site)
 

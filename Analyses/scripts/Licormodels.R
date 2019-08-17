@@ -1,7 +1,7 @@
 ###################################################
 #Models attempting to code dataset to run linear models
 ###################################################
-setwd("~/Documents/Ph.D/LI-COR Data (Manning Park)/NMDS")
+setwd("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/input/NMDS")
 
 rm(list=ls()) # remove everything currently held in the R memory
 options(stringsAsFactors=FALSE)
@@ -26,6 +26,8 @@ nmds1 <- melt(nmds, id.vars = c("X", "specieslatbi"))
 nmds1 <- na.omit(nmds1)
 nmds1$site <- (sub("^[^_]*_", "", nmds1$variable))
 nmds1$variable <- gsub("_.*", "",nmds1$variable)
+
+setwd("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/output")
 
 path <- unique(nmds1$variable)
 
@@ -43,7 +45,7 @@ for (i in (unique(nmds1$variable))){
 #FR readings 
 #############################
 
-setwd("~/Documents/Ph.D/LI-COR Data (Manning Park)/R readings")
+setwd("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/input/Rreadings")
 
 rm(list=ls()) # remove everything currently held in the R memory
 options(stringsAsFactors=FALSE)
@@ -68,6 +70,8 @@ nmds1 <- melt(nmds, id.vars = c("X", "specieslatbi"))
 nmds1 <- na.omit(nmds1)
 nmds1$site <- (sub("^[^_]*_", "", nmds1$variable))
 nmds1$variable <- gsub("_.*", "",nmds1$variable)
+
+setwd("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/output")
 
 path <- unique(nmds1$variable)
 

@@ -1,4 +1,4 @@
-setwd("~/Documents/Ph.D/LI-COR Data (pacific spirit park)")
+setwd("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/input/")
 rm(list=ls()) # remove everything currently held in the R memory
 options(stringsAsFactors=FALSE)
 library(tidyverse)
@@ -26,6 +26,9 @@ NMDS_RambspcPSP1 <- melt(NMDS_RambspcPSP, id.vars = c("Species", "Site"))
 NMDS_RambspcPSP1$specieslatbi<-sub("^([[:alpha:]]*).*", "\\1", NMDS_RambspcPSP1$Species)
 
 path <- unique(NMDS_RambspcPSP1$variable)
+
+setwd("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/output")
+
 
 for (i in (unique(NMDS_RambspcPSP1$variable))){
   filename<- paste("LicormodelsPSP",i,".csv", sep = "")

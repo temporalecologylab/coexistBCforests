@@ -1,6 +1,6 @@
 rm(list=ls()) # remove everything currently held in the R memory
 options(stringsAsFactors=FALSE)
-setwd("~/Documents/Ph.D/LI-COR Data (Manning Park)")
+setwd("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/input")
 
 library(vegan)
 library(ape)

@@ -1,7 +1,7 @@
 ####script to create light data for Ph.D. 
 rm(list=ls()) # remove everything currently held in the R memory
 options(stringsAsFactors=FALSE)
-setwd("~/Documents/Ph.D/LI-COR Data (pacific spirit park)")
+setwd("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/input")
 
 library(vegan)
 library(tidyverse)
@@ -38,6 +38,7 @@ rownames(LiCordata_adult) <- make.names(LiCordata_adult$Species, unique = TRUE)
 #repeats each ambient reading three times in a new dataset
 LiCordata_adult1 <- LiCordata_adult1 %>% slice(rep(1:n(), each = 3))
 
+setwd("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/output")
 
 path <- unique(names(LiCordata_adult[,(3:17)]))
 k2 <- (matrix(NA, nrow= nrow(LiCordata_adult[,(3:17)]), ncol = ncol(LiCordata_adult[,(3:17)])))

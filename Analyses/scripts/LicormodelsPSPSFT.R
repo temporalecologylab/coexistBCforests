@@ -1,7 +1,7 @@
 ###################################################
 #Models attempting to code dataset to run linear models
 ###################################################
-setwd("~/Documents/Ph.D/LI-COR Data (pacific spirit park)/SFT")
+setwd("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/input")
 
 rm(list=ls()) # remove everything currently held in the R memory
 options(stringsAsFactors=FALSE)
@@ -14,7 +14,7 @@ library(data.table)
 library(tibble)
 library(dplyr)
 
-NMDS_RambspcPSPSFT <- read.csv("~/Documents/Ph.D/LI-COR Data (pacific spirit park)/SFT/NMDS_RambspcPSPSFT.csv", header=FALSE)
+NMDS_RambspcPSPSFT <- read.csv("NMDS_RambspcPSPSFT.csv", header=FALSE)
 
 colnames(NMDS_RambspcPSPSFT) <- NMDS_RambspcPSPSFT[1,]
 NMDS_RambspcPSPSFT <- NMDS_RambspcPSPSFT[-1,]
@@ -27,6 +27,8 @@ NMDS_RambspcPSPSFT$specieslatbi<-sub("^([[:alpha:]]*).*", "\\1", NMDS_RambspcPSP
 nmds1 <- melt(NMDS_RambspcPSPSFT, id.vars = c("Species", "specieslatbi"))
 
 path <- unique(nmds1$variable)
+
+setwd("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/output")
 
 for (i in (unique(nmds1$variable))){
   filename<- paste("Licormodels",i,".csv", sep = "")
