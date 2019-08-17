@@ -10,8 +10,8 @@ library(tibble)
 library(dplyr)
 
 #Import datasets
-NMDS_RambspcPSPSFT <- read.csv("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/input/NMDS_RambspcPSPSFT.csv", header=TRUE)
-NMDS_RambspcPSPST <- read.csv("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/input/NMDS_RambspcPSPST.csv", header=TRUE)
+NMDS_RambspcPSPSFT <- read.csv("NMDS_RambspcPSPSFT.csv", header=TRUE)
+NMDS_RambspcPSPST <- read.csv("NMDS_RambspcPSPST.csv", header=TRUE)
 
 
 colnames(NMDS_RambspcPSPSFT)[1] <- "Species"
