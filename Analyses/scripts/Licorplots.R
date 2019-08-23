@@ -1,13 +1,13 @@
 rm(list=ls()) # remove everything currently held in the R memory
 options(stringsAsFactors=FALSE)
-setwd("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/input")
+setwd("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/")
 
 library(vegan)
 library(ape)
 library(dplyr)
 library(factoextra)
 
-LiCordatafinal <- read_csv("LiCordatafinal.csv")
+LiCordatafinal <- read_csv("input/LiCordatafinal.csv")
 
 #fixeserrors in species' names
 LiCordatafinal$Species <- gsub(x= LiCordatafinal$Species, pattern = "lONSOF", replacement = "LONSOF")

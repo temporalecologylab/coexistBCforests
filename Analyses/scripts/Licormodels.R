@@ -27,12 +27,11 @@ nmds1 <- na.omit(nmds1)
 nmds1$site <- (sub("^[^_]*_", "", nmds1$variable))
 nmds1$variable <- gsub("_.*", "",nmds1$variable)
 
-setwd("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/output")
 
 path <- unique(nmds1$variable)
 
 for (i in (unique(nmds1$variable))){
-  filename<- paste("Licormodels",i,".csv", sep = "")
+  filename<- paste("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/output/Licormodels",i,".csv", sep = "")
   li <- subset(nmds1, variable == i)
   li <- na.omit(li)
   lm(value ~ site + specieslatbi, data= li)
@@ -71,12 +70,11 @@ nmds1 <- na.omit(nmds1)
 nmds1$site <- (sub("^[^_]*_", "", nmds1$variable))
 nmds1$variable <- gsub("_.*", "",nmds1$variable)
 
-setwd("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/output")
 
 path <- unique(nmds1$variable)
 
 for (i in (unique(nmds1$variable))){
-  filename<- paste("Licormodels",i,".csv", sep = "")
+  filename<- paste("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/output/Licormodels",i,".csv", sep = "")
   li <- subset(nmds1, variable == i)
   li <- na.omit(li)
   lm(value ~ site + specieslatbi, data= li)

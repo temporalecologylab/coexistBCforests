@@ -1,6 +1,6 @@
 rm(list=ls()) # remove everything currently held in the R memory
 options(stringsAsFactors=FALSE)
-setwd("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/input")
+setwd("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/")
 
 library(vegan)
 library(tidyverse)
@@ -14,8 +14,6 @@ library(dplyr)
 ###############################################
 #Comparing species within sites
 ##############################################
-
-LiCordatafinal <- read_csv("LiCordatafinal.csv")
 
 #fixeserrors in species' names
 LiCordatafinal$Species <- gsub(x= LiCordatafinal$Species, pattern = "lONSOF", replacement = "LONSOF")
@@ -47,14 +45,12 @@ k <- k[,-1]
 
 path <- unique(LiCordata_adult$Site)
 
-setwd("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/output")
-
 for (i in 1:length(path)){
   k1 <- select(k, contains(path[i])) #selects variables that contain the sites 
   k1 <- na.omit(k1) #omits NAs
   community_matrix <- as.matrix(k1) #creates matrix
   example_NMDS=metaMDS(community_matrix, k=3, wascores = TRUE) #runs NMDS
-  plotname <- paste("NMDS",path[i],".pdf", sep="") #plotseach site seperately 
+  plotname <- paste("output/NMDS",path[i],".pdf", sep="") #plotseach site seperately 
   pdf(file= plotname)
   stressplot(example_NMDS)
   plot(example_NMDS)

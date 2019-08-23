@@ -1,7 +1,7 @@
 ####script to create light data for Ph.D. 
 rm(list=ls()) # remove everything currently held in the R memory
 options(stringsAsFactors=FALSE)
-setwd("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/input")
+setwd("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/")
 
 library(vegan)
 library(tidyverse)
@@ -16,7 +16,7 @@ library(dplyr)
 #species-ambeint readings
 #########################################################
 
-LiCordatafinal <- read_csv("LiCordatafinalpsp.csv")
+LiCordatafinal <- read_csv("input/LiCordatafinalpsp.csv")
 
 LiCordata_adult <- LiCordatafinal[LiCordatafinal$Species != 'AMBIENT',]
 
@@ -49,8 +49,9 @@ for (n in 1:length(path)){
 }  
 community_matrix <- as.matrix(k2) #creates matrix
 example_NMDS=metaMDS(community_matrix, k=3, autotransform = FALSE) #runs NMDS
-pdf(file= paste("NMDS_RambspcPSPST",".pdf", sep = ))
-write.csv(k2, "NMDS_RambspcPSPST.csv")
+filename <- paste("output/NMDS_RambspcPSPST",".pdf", sep = )
+pdf(file= filename)
+write.csv(k2, filename)
 stressplot(example_NMDS)
 plot(example_NMDS)
 orditorp(example_NMDS,display="sites",cex= 0.5,air= 0.3)#labels points as best as we can
