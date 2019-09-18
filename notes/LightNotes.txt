@@ -1,0 +1,56 @@
+Thery 2001. Forest light and its influence on habitat selection 
+
+two types of light measurements: irradiance and radiance. Vaguely speaking, irradiance is the amount of light incoming to a certain point from possibly all directions, while radiance is the amount of light incoming to a point from a single directions.
+
+Time of day effects light emitted as well as location compared to the equator 
+
+different life scales of species may need different light intensities
+
+This paper didn't have much about spectral diversity and focussed much more on tropical forests than temperate forests. 
+
+
+Schmitt and Wulff TREE 1993
+
+red to far red ratio of incidenct light may be dramatically reduced under a closed leaf canopy compared to ambient readings. Thius R:FR is an important cue by which plants may detect microenvironmental variation. 
+
+changes due to crowding can be seen in R:FR not only in direct light but also when one competitior outshades another. These responses are phytochrome mediated. 
+
+Box 1. describes phytochromes very well 
+
+This paper dicusses red to far red ratio which can be used to infer competitive dynamics as well may show adapatation to environments. 
+
+
+Johnson et al 2016. journal of applied ecology
+
+Far red (700-800nm), red(620-700nm)
+researchers altered r:fr ratio to observe effect on a parasitic dodder on a plant. I am not sure how relevant this paper is to our work. 
+
+Schweiger et al. Nature ecology and evolution. 2018
+
+First paper to use this term spectral diversity which is a biodiversity metric based on spectra of electromagnetic radiation reflected from plants that integrates a range of functional differences among individuals and species. They tested not only spectral diversity but also phylogenetic and functional diversity. 
+
+spectral dissimilarty explained 28% of distance in functional trait space and 20% of phylogenetic distance. 
+
+Spectral diversity of plant communities explained 51% of total variation. 
+
+paper explains how using spectral profiles of plants to estimate biodiversity is useful. 
+
+Researchers used 400-2500nm. Figure 2 shows how maybe to grab full range of spectral diversity we may need better devices than we are using currently. 
+
+Spectral diversity can capture variation that is not traditionally measured. 
+
+Mehtods: only 2 tree species used, organized into functional groups sort of. 
+
+They used a portable field spectrometer covering wavelengths of 340-2500, with a leaf clip. They collecte spectral data for 1m X 1m grid 4-8 times for a 9m x 9m plot. Spectral readings were taken at a leaf level. 
+
+Davies et al.2013 global change biology
+how artificial light affects species (not plants) interesting but not that useful
+
+Same story with Gaston et al. 2014. Oecologia
+
+Cronin, wolff and Condon. 1998. Biotropica (not helpful)
+
+
+
+ 
+
