@@ -51,6 +51,50 @@ Same story with Gaston et al. 2014. Oecologia
 Cronin, wolff and Condon. 1998. Biotropica (not helpful)
 
 
+Lee et al. 1996 Ecology 
 
+Light environments under vegetation canopies vary in quantity and quality. The intensity of radiation is altered by passage through foliage, surface reflectance, and penumbral effects due to small holes in the canopy. In tropical rain forests the mean intensity of radiation on the forest floor ranges from 5 to 25 pmol.m-2*s-' of photons 400-700 nm (pho- tosynthetic photon flux density, PPFD), or 1-3% of sun- light above the canopy (Chazdon et al. 1996).
+
+Passage of sunlight through the canopy also alters its quality, or spectral distribution. Leaves absorb 80- 90% of the visible quanta, but few of the quanta above 700 nm (Gates et al. 1965, Lee and Graham 1986).
+
+Foliage thus functions as a selective filter, particularly altering the ratio of red to far-red wavelengths. Quantum ratios of these wavelengths determine phytochrome equilibria in tissues, and may profoundly influence plant development. 
+
+Smith (1982, 1994) and col- leagues have pioneered research on the ecological importance of foliage shade to plant development, defining the significant band widths as a ratio of quanta centering on 660 nm to that at 730 nm (with a half peak band width of 10 nm), or R:FR. R:FR is dramatically reduced under canopy shade, from a high of 1.05-1.35 in direct sunlight (Lee and Downum 1991) to 0.20 in dense shade (Stoutjestijk 1972, Tasker and Smith
+
+Shading alters: (1) internode distance, branch length and plant height; (2) axillary bud initiation and branching; (3) photosynthate allocation to stems, leaves, and roots; (4) leaf area, specific mass and anatomy; (5) photosynthesis and transpiration; (6) chloroplast ultrastructure; and (7) the stoichiometry of components of both the light and dark reactions of photosynthesis.
+
+Although the least shade-tolerant species (E. malaccense) did respond most strongly to reduced R:FR, all species in the study responded to R:FR for some characters, in addition to reduced PPFD. The specific pattern of response varied among the taxa.
+
+Differences in these developmental patterns may be understood from more careful examination of the functional ecology of each taxon. Eco ogical differences, even among closely related taxa, suggest that the light-activated genes controlling development may be relatively variable and, under selection, may influence character development differ- ently in different taxa (Thompson and White 1991, Quail 1994). Secondly, the markedly different light responses among these taxa may be partly tied to their evolutionary histories. Comparative analysis of development, considering phylogenetic history (Felsenstein 1985, Miles and Dunham 1993), would benefit from a larger sample than the present study
  
+ 
+Endler. 1993. Ecological Monographs 
+
+Variation in the spectral composition of the near- ultraviolet (350-400 nm) and "visible" spectrum (400- 700 nm) affects the visibility of animals, flowers, and fruits to vertebrates and invertebrates (Lythgoe 1979, Endler 1986, 1990, 1991, 1992). 
+
+The distribution of ambient light intensity (Q) with wave- length (X) is called the irradiance spectrum Q(X). The irradiance spectrum is the sum of radiances from all light sources. Radiance comes from objects that produce light and from objects that reflect or transmit light. Radiant sources include the sun, blue sky, and cloudy sky showing through holes in the canopy, illuminated leaves, shaded leaves, trunks, branches, other vegetation, leaf litter, and soil.
+
+Direct light is light coming directly from the sun while diffuse light is light arriving directly from all other sources.The dichotomy between direct and diffuse light sources. insufficient for studies of color because diffuse light components, such as blue sky, clouds, leaves, and bark, differ strongly in spectral composition. Because radiant spectra differ in shape, changes in the proportions of various light sources can cause changes in the color of ambient light. In order to describe how irradiance spectra should change with forest geometry. 
+
+Figure 1 shows a good overview of how colour patterns are generated in a forest. 
+
+The radiance spectra can be used to derive the relationship between forest geometry and light environments. Radiance can be defined as the light reaching a patch from a particular light source subtending a particular solid angle on the patch, corrected to a unit angle (1 steradian, sr). The irradiance spectrum Q(X) is a function of the radiant spectra qi(X) of all light sources i that illuminate the patch. If the patch is flat, then the light is effectively being collected from a hemisphere, a solid angle of 1800 or 2ir steradians. If the patch is convex, then >2ir sr will be collected, while if the patch is concave, then <2ir sr will be collected
+
+
+The range of light used by plants in photosynthesis (PAR) is also 400-700 nm (Kirk 1983).
+
+Light quality= ratio of iiradiance between 655-666nm and the irradiance between 725-735nm. 
+
+The color of forest light depends upon forest geometry, weather, and time of day, and seems to be nearly independent of forest species composition. Yes but we are trying to test the opposite!
+
+(1) forest shade, greenish or yellow-green; rich in middle wavelengths (and also above 680 nm); (2) woodland shade, bluish or bluish-gray; rich in short wavelengths and UV; (3) small gaps, reddish; richer in longer wavelengths; (4) open/cloudy (includes large gaps in any weather, and forest shade, woodland shade and small gaps during cloudy weather), essentially "white" light; and (5) early/late, purplish; deficient in middle wavelengths. All of these light environments were present in all study sites except for those with thin canopies.
+
+day. Nevertheless, shrub, herb, and epiphyte species that specialize in particular light environments such as primary forests (forest shade), canopy shade (epiphytes in woodland shade), or shady places in woodlands (woodland shade), may follow the predictions. For example, on average, red fruits should be more common in forests and blue fruits more common in woodland, forest edges, and forest canopies, as well as forests with thin canopies (large G, as in many coniferous and Eucalyptus forests). Flowers with ultraviolet "honey guides" may be more common in woodlands and canopy shade than on the forest floor.
+
+This suggests that species that flower or fruit during the wet or summer seasons should on average have a greater incidence of red, orange, and yellow fruits and flowers. Forest species that flower or fruit during the dry season, or the beginning or end of winter, should show on average a greater frequency of blue, blue-green, and ultraviolet-reflecting flowers. These predictions should only hold true for species growing in shade, and those flowering and fruiting during seasons with little cloud cover; cloud cover results in homogeneous whitish light, yielding no predictions about best signal colors.
+
+The spectral composition of ambient light has profound effects on plant growth and morphogenesis.Short wavelengths also affect development or inhibition of germination, primordia, growth form (elongation and expansion) and physiological processes such as stomatal opening (Senger 1980, 1987, Fuk- shansky 1981, Thomas 1981, Zeiger et al. 1981, Cos- grove 1983, Durand 1987).
+
+The relative intensity of red and near-infrared light (red/ far red ratio, A) affects seed germination, hypocotyl elongation, tillering rate, growth and elongation of stems, expansion rate of leaves, and photosynthetic rates (Smith 1981 a, Derigibus et al. 1985, Fenner 1985, Ballar& et al. 1988).
+
 
