@@ -39,7 +39,7 @@ Researchers used 400-2500nm. Figure 2 shows how maybe to grab full range of spec
 
 Spectral diversity can capture variation that is not traditionally measured. 
 
-Mehtods: only 2 tree species used, organized into functional groups sort of. 
+Methods: only 2 tree species used, organized into functional groups sort of. 
 
 They used a portable field spectrometer covering wavelengths of 340-2500, with a leaf clip. They collecte spectral data for 1m X 1m grid 4-8 times for a 9m x 9m plot. Spectral readings were taken at a leaf level. 
 
@@ -49,7 +49,6 @@ how artificial light affects species (not plants) interesting but not that usefu
 Same story with Gaston et al. 2014. Oecologia
 
 Cronin, wolff and Condon. 1998. Biotropica (not helpful)
-
 
 Lee et al. 1996 Ecology 
 
@@ -65,7 +64,7 @@ Shading alters: (1) internode distance, branch length and plant height; (2) axil
 
 Although the least shade-tolerant species (E. malaccense) did respond most strongly to reduced R:FR, all species in the study responded to R:FR for some characters, in addition to reduced PPFD. The specific pattern of response varied among the taxa.
 
-Differences in these developmental patterns may be understood from more careful examination of the functional ecology of each taxon. Eco ogical differences, even among closely related taxa, suggest that the light-activated genes controlling development may be relatively variable and, under selection, may influence character development differ- ently in different taxa (Thompson and White 1991, Quail 1994). Secondly, the markedly different light responses among these taxa may be partly tied to their evolutionary histories. Comparative analysis of development, considering phylogenetic history (Felsenstein 1985, Miles and Dunham 1993), would benefit from a larger sample than the present study
+Differences in these developmental patterns may be understood from more careful examination of the functional ecology of each taxon. Ecoogical differences, even among closely related taxa, suggest that the light-activated genes controlling development may be relatively variable and, under selection, may influence character development differently in different taxa (Thompson and White 1991, Quail 1994). Secondly, the markedly different light responses among these taxa may be partly tied to their evolutionary histories. Comparative analysis of development, considering phylogenetic history (Felsenstein 1985, Miles and Dunham 1993), would benefit from a larger sample than the present study
  
  
 Endler. 1993. Ecological Monographs 
