@@ -59,7 +59,7 @@ Passage of sunlight through the canopy also alters its quality, or spectral dist
 
 Foliage thus functions as a selective filter, particularly altering the ratio of red to far-red wavelengths. Quantum ratios of these wavelengths determine phytochrome equilibria in tissues, and may profoundly influence plant development. 
 
-Smith (1982, 1994) and col- leagues have pioneered research on the ecological importance of foliage shade to plant development, defining the significant band widths as a ratio of quanta centering on 660 nm to that at 730 nm (with a half peak band width of 10 nm), or R:FR. R:FR is dramatically reduced under canopy shade, from a high of 1.05-1.35 in direct sunlight (Lee and Downum 1991) to 0.20 in dense shade (Stoutjestijk 1972, Tasker and Smith
+Smith (1982, 1994) and colleagues have pioneered research on the ecological importance of foliage shade to plant development, defining the significant band widths as a ratio of quanta centering on 660 nm to that at 730 nm (with a half peak band width of 10 nm), or R:FR. R:FR is dramatically reduced under canopy shade, from a high of 1.05-1.35 in direct sunlight (Lee and Downum 1991) to 0.20 in dense shade (Stoutjestijk 1972, Tasker and Smith
 
 Shading alters: (1) internode distance, branch length and plant height; (2) axillary bud initiation and branching; (3) photosynthate allocation to stems, leaves, and roots; (4) leaf area, specific mass and anatomy; (5) photosynthesis and transpiration; (6) chloroplast ultrastructure; and (7) the stoichiometry of components of both the light and dark reactions of photosynthesis.
 
@@ -70,7 +70,7 @@ Differences in these developmental patterns may be understood from more careful 
  
 Endler. 1993. Ecological Monographs 
 
-Variation in the spectral composition of the near- ultraviolet (350-400 nm) and "visible" spectrum (400- 700 nm) affects the visibility of animals, flowers, and fruits to vertebrates and invertebrates (Lythgoe 1979, Endler 1986, 1990, 1991, 1992). 
+Variation in the spectral composition of the near ultraviolet (350-400 nm) and "visible" spectrum (400- 700 nm) affects the visibility of animals, flowers, and fruits to vertebrates and invertebrates (Lythgoe 1979, Endler 1986, 1990, 1991, 1992). 
 
 The distribution of ambient light intensity (Q) with wave- length (X) is called the irradiance spectrum Q(X). The irradiance spectrum is the sum of radiances from all light sources. Radiance comes from objects that produce light and from objects that reflect or transmit light. Radiant sources include the sun, blue sky, and cloudy sky showing through holes in the canopy, illuminated leaves, shaded leaves, trunks, branches, other vegetation, leaf litter, and soil.
 
@@ -83,18 +83,48 @@ The radiance spectra can be used to derive the relationship between forest geome
 
 The range of light used by plants in photosynthesis (PAR) is also 400-700 nm (Kirk 1983).
 
-Light quality= ratio of iiradiance between 655-666nm and the irradiance between 725-735nm. 
+Light quality= ratio of irradiance between 655-666nm and the irradiance between 725-735nm. 
 
 The color of forest light depends upon forest geometry, weather, and time of day, and seems to be nearly independent of forest species composition. Yes but we are trying to test the opposite!
 
 (1) forest shade, greenish or yellow-green; rich in middle wavelengths (and also above 680 nm); (2) woodland shade, bluish or bluish-gray; rich in short wavelengths and UV; (3) small gaps, reddish; richer in longer wavelengths; (4) open/cloudy (includes large gaps in any weather, and forest shade, woodland shade and small gaps during cloudy weather), essentially "white" light; and (5) early/late, purplish; deficient in middle wavelengths. All of these light environments were present in all study sites except for those with thin canopies.
 
-day. Nevertheless, shrub, herb, and epiphyte species that specialize in particular light environments such as primary forests (forest shade), canopy shade (epiphytes in woodland shade), or shady places in woodlands (woodland shade), may follow the predictions. For example, on average, red fruits should be more common in forests and blue fruits more common in woodland, forest edges, and forest canopies, as well as forests with thin canopies (large G, as in many coniferous and Eucalyptus forests). Flowers with ultraviolet "honey guides" may be more common in woodlands and canopy shade than on the forest floor.
+Nevertheless, shrub, herb, and epiphyte species that specialize in particular light environments such as primary forests (forest shade), canopy shade (epiphytes in woodland shade), or shady places in woodlands (woodland shade), may follow the predictions. For example, on average, red fruits should be more common in forests and blue fruits more common in woodland, forest edges, and forest canopies, as well as forests with thin canopies (large G, as in many coniferous and Eucalyptus forests). Flowers with ultraviolet "honey guides" may be more common in woodlands and canopy shade than on the forest floor.
 
 This suggests that species that flower or fruit during the wet or summer seasons should on average have a greater incidence of red, orange, and yellow fruits and flowers. Forest species that flower or fruit during the dry season, or the beginning or end of winter, should show on average a greater frequency of blue, blue-green, and ultraviolet-reflecting flowers. These predictions should only hold true for species growing in shade, and those flowering and fruiting during seasons with little cloud cover; cloud cover results in homogeneous whitish light, yielding no predictions about best signal colors.
 
 The spectral composition of ambient light has profound effects on plant growth and morphogenesis.Short wavelengths also affect development or inhibition of germination, primordia, growth form (elongation and expansion) and physiological processes such as stomatal opening (Senger 1980, 1987, Fuk- shansky 1981, Thomas 1981, Zeiger et al. 1981, Cos- grove 1983, Durand 1987).
 
 The relative intensity of red and near-infrared light (red/ far red ratio, A) affects seed germination, hypocotyl elongation, tillering rate, growth and elongation of stems, expansion rate of leaves, and photosynthetic rates (Smith 1981 a, Derigibus et al. 1985, Fenner 1985, Ballar& et al. 1988).
+
+
+Brelsford et al. 2019. Tree Physiology
+
+The spectral composition of solar radiation reaching the Earth’s surface changes diurnally over the course of a day, seasonally over the course of a year, as well as with latitude
+(Johnson et al. 1967, Smith 1982, Hughes et al. 1984, Nilsen 1985).
+
+Although, both blue light and UV-B radiation (280–315 nm) have been shown to affect bud set (Mølmann et al. 2006, Strømme et al. 2015), it is not clear whether these effects act together with R:FR or not.
+
+The most common calculation of the R:FR ratio is the ratio of λ 660:730 nm (defined by Smith 1982). During twilight hours, between dawn
+and sunrise and between sunset and dusk (Goldstein 1976,Forsyth et al. 1995, Aphalo 2016), a drop in the ratio of R:FR due to the enrichment of FR light in the atmosphere is
+reported to occur (Figures 1 and 2; Robertson (1966); Smith 1982, Chambers and Spence 1984, Hughes et al. 1984). Other studies report a sharp brief increase in the R:FR ratio during
+sunrise and sunset but confirm that R:FR drops during twilight(Lee and Downum 1991, López-Figueroa 1992, Ragni and Ribera D’Alcalà 2004).
+
+Increased refraction of light entering
+the atmosphere during periods when the sun angle is between −18◦ and 0◦ preferentially enhances longer wavelengths of the spectrum causing the reduction in R:FR during twilight (Holmes and Smith 1977).The annual variation in twilight duration (and thus the duration of a lowered R:FR ratio during twilight) increases at higher latitudes (Figures 1 and 2; Linkosalo and Lechowicz 2006, Franklin and Whitelam 2007).
+
+Plants growing at higher latitudes tend to exhibit greater sensitivity to photoperiodic responses, whereas photoperiodic changes are less relevant for plants at low latitudes
+that tend not to display this capacity (Stinchcombe et al. 2004, Zhang et al. 2008, Way and Montgomery 2015). An alternative
+explanation is that there are latitudinal differences in how plants respond to R and FR light, whereby the length of the night is
+detected by short-day plants and southern ecotypes of plant species, whereas the FR-enriched twilight period at the end
+of the day is the determining factor for the response of longday plants and northern  ecotypes of plant species (Howe et al. 1996, Olsen 2010). 
+
+Figure 1 and 2 useful!
+
+R:FR and spectral composition are cues to regulate the timing of bud burst.
+
+Ultraviolet radiation is recognized as an important environmental cue modulating plant growth and development (Rozema et al. 1997, Jansen and Bornman 2012).
+
+The view that green light (500–600 nm) is less important than other wavelengths of the spectrum still persists to some extent (Smith et al. 2017).
 
 
