@@ -62,7 +62,8 @@ k2$species<-sub("^([[:alpha:]]*).*", "\\1", k2$rowname)
 
 k2 <- k2[,-1]
 
-
+k2$variable<- gsub("nm","", paste(k2$variable))
+k2$variable <- as.numeric(k2$variable)
 
 weeknd <- subset(k2, species== "THUPLI")
 plot(value ~ variable , data= weeknd)

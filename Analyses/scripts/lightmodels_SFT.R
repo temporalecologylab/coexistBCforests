@@ -40,7 +40,7 @@ colnames(k2) <- colnames(LiCordata_adult[,(3:403)])
 row.names(k2) <- rownames(LiCordata_adult)
 for (n in 1:length(path)){ 
   k2[,n]<- as.matrix(LiCordata_adult[,(3:403)][,n] - LiCordata_adult1[,(3:403)][,n])
-}  
+  }  
 community_matrix <- as.matrix(k2) #creates matrix
 example_NMDS=metaMDS(community_matrix, k=3, autotransform = FALSE) #runs NMDS
 filename <- paste("output/NMDS_RambspcPSPSFT3",".pdf", sep = )
@@ -62,7 +62,8 @@ k2$species<-sub("^([[:alpha:]]*).*", "\\1", k2$rowname)
 
 k2 <- k2[,-1]
 
-
+k2$variable<- gsub("nm","", paste(k2$variable))
+k2$variable <- as.numeric(k2$variable)
 
 tory <- subset(k2, species== "THUPLI")
 plot(value ~ variable , data= tory)
@@ -75,7 +76,12 @@ k3 <- k2 %>%
   group_by(variable,species) %>%
   summarise(avg = mean(value))
 
+write_csv(k3, "NMDS_RambspcPSPSFT3_2.csv")
+
 ggplot(data = k3, aes(variable,avg,color=species)) + geom_point()
+
+k3[,3]<- abs(k3[,3])
+k3[,3] <- log10(k3[,3])
 
 
 path <- unique(k2$species)
