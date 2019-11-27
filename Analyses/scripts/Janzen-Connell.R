@@ -1,7 +1,7 @@
 # housekeeping
 rm(list=ls()) # remove everything currently held in the R memory
 options(stringsAsFactors=FALSE)
-setwd("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/")
+setwd("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/") # setwd("~/Documents/git/projects/others/darwin/coexistencebc/Analyses")
 
 library(readxl)
 library(tidyverse)
@@ -12,7 +12,7 @@ library(data.table)
 library(tibble)
 library(dplyr)
 
-Janzen_Connell_ <- read_excel("~/Documents/GitHub/Coexistence-in-BC-Forests/Data/Janzen-Connell /Janzen-Connell .xlsx")
+Janzen_Connell_ <- read_excel("..//Data/Janzen-Connell /Janzen-Connell .xlsx")
 
 ######################################################################################
 #plotting all data at once
