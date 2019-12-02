@@ -49,9 +49,15 @@ print(ggplot(Janzen_Connell_Logistic, aes(x=conspecific, y=health_scale, color=S
               se = FALSE))
 dev.off()
 
+#With confidence intervals
+apparat2<- ggplot(Janzen_Connell_Logistic, aes(x=conspecific, y=health_scale, color=Species)) +
+  geom_point(position = position_jitter(height = 0.05, width = 0.1)) +
+  geom_smooth(method = "glm", 
+              method.args = list(family = "binomial"), 
+              se = TRUE, level= 0.8)
+         
 #PICENG/PICGLA don't have a lot of data
 #TSUHET shows a very weak trend where health decreases while near conspecific
 #POPTRE shows a strong tread where health decreases while near conspecific
 #ACEGLA shows opposite trend where health increases while near conspecific
 
-  
