@@ -1,0 +1,46 @@
+1. Gain a broader and deeper understanding of what is known about the
+factors control tree community composition in BC forests
+
+"British Columbia" AND "forest*" AND "tree*" AND "Community Assembly" AND "seedling" 
+yielded: 43
+
+"British Columbia" AND "forest*" AND "tree*" AND "Community dynamic*" AND "seedling" AND "mycorrhiza*"
+yielded: 41
+
+"British Columbia" AND "forest*" AND "tree*" AND "Community dynamic*" AND "seedling" AND "climate*"
+yielded: 112
+
+"British Columbia" AND "forest*" AND "tree*" AND "Community dynamic*" AND "seedling" AND "growth" OR "surviv*" OR "mortality"
+yielded: 117
+
+"British Columbia" AND "forest*" AND "tree*" AND "seedling" AND "regenerat*"
+yielded: 16
+
+
+
+2. Find any relevant data that could help you with your Janzen-Connell questions.
+
+"British Columbia" AND "forest*" AND "tree*" AND "seedling" AND "sap*" AND "Growth" AND "dependen*"
+yield: 2
+
+"British Columbia" AND "forest*" AND "tree*" AND "compet*" AND "seedling" AND "sap*" AND "Growth" OR "effect"
+yielded: 130 
+
+"British Columbia" AND "forest*" AND "tree*" AND "seedling" AND "sap*" AND "Growth" AND "regenerat*"
+yielded: 8
+
+"British Columbia" AND "forest*" AND "tree*" AND "seedling" AND "sap*" AND "Growth" OR "diseas*" OR "pathogen*"
+yielded: 213
+
+"British Columbia" AND "forest*" AND "tree*" AND "seedling" AND "sap*" AND "germinant*"
+yielded: 93
+
+
+Helpful websites: 
+
+https://lucene.apache.org/core/2_9_4/queryparsersyntax.html
+
+https://guides.jstor.org/c.php?g=475564&p=3258529
+
+https://library.leeds.ac.uk/info/1404/literature_searching/14/literature_searching_explained/4
+
