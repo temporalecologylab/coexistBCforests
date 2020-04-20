@@ -16,7 +16,17 @@ yielded: 117
 "British Columbia" AND "forest*" AND "tree*" AND "seedling" AND "regenerat*"
 yielded: 16
 
+"British Columbia" AND "forest*" AND "tree*" AND "metacommunity"
+yielded: 43
 
+"British Columbia" AND "forest*" AND "tree*" AND "seedling" AND "sap*" AND "disperse*"
+yielded: 111
+
+"British Columbia" AND "forest*" AND "tree*" AND "seedling" AND "succession*" AND "Community dynamic*"
+yielded: 117
+
+"British Columbia" AND "forest*" AND "tree*" AND "seedling" AND "sap*" AND "Growth" AND "trade-off*"
+yielded: 34
 
 2. Find any relevant data that could help you with your Janzen-Connell questions.
 
@@ -34,6 +44,15 @@ yielded: 213
 
 "British Columbia" AND "forest*" AND "tree*" AND "seedling" AND "sap*" AND "germinant*"
 yielded: 93
+
+"British Columbia" AND "forest*" AND "tree*" AND "seedling" AND "compet*" AND "Community dynamic*"
+yielded: 81
+
+"British Columbia" AND "forest*" AND "tree*" AND "seedling" AND "sap*" AND "Growth" AND "predat*"
+yielded: 63
+
+"British Columbia" AND "forest*" AND "tree*" AND "Community dynamic*" AND "seedling" AND "intra*" AND "competitive*"
+yielded: 32
 
 
 Helpful websites: 
