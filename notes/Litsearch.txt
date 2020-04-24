@@ -1,58 +1,16 @@
 1. Gain a broader and deeper understanding of what is known about the
 factors control tree community composition in BC forests
 
-"British Columbia" AND "forest*" AND "tree*" AND "Community Assembly" AND "seedling" 
-yielded: 43
 
-"British Columbia" AND "forest*" AND "tree*" AND "Community dynamic*" AND "seedling" AND "mycorrhiza*"
-yielded: 41
+(description: "British Columbia" AND "forest*" AND "tree*" AND "Community dynamic*" AND ("seedling" OR "germina*") AND ("growth" OR "surviv*" OR "mortality"))
+yielded: 37
 
-"British Columbia" AND "forest*" AND "tree*" AND "Community dynamic*" AND "seedling" AND "climate*"
-yielded: 112
-
-"British Columbia" AND "forest*" AND "tree*" AND "Community dynamic*" AND "seedling" AND "growth" OR "surviv*" OR "mortality"
-yielded: 117
-
-"British Columbia" AND "forest*" AND "tree*" AND "seedling" AND "regenerat*"
-yielded: 16
-
-"British Columbia" AND "forest*" AND "tree*" AND "metacommunity"
-yielded: 43
-
-"British Columbia" AND "forest*" AND "tree*" AND "seedling" AND "sap*" AND "disperse*"
-yielded: 111
-
-"British Columbia" AND "forest*" AND "tree*" AND "seedling" AND "succession*" AND "Community dynamic*"
-yielded: 117
-
-"British Columbia" AND "forest*" AND "tree*" AND "seedling" AND "sap*" AND "Growth" AND "trade-off*"
-yielded: 34
 
 2. Find any relevant data that could help you with your Janzen-Connell questions.
 
-"British Columbia" AND "forest*" AND "tree*" AND "seedling" AND "sap*" AND "Growth" AND "dependen*"
-yield: 2
 
-"British Columbia" AND "forest*" AND "tree*" AND "compet*" AND "seedling" AND "sap*" AND "Growth" OR "effect"
-yielded: 130 
-
-"British Columbia" AND "forest*" AND "tree*" AND "seedling" AND "sap*" AND "Growth" AND "regenerat*"
-yielded: 8
-
-"British Columbia" AND "forest*" AND "tree*" AND "seedling" AND "sap*" AND "Growth" OR "diseas*" OR "pathogen*"
-yielded: 213
-
-"British Columbia" AND "forest*" AND "tree*" AND "seedling" AND "sap*" AND "germinant*"
-yielded: 93
-
-"British Columbia" AND "forest*" AND "tree*" AND "seedling" AND "compet*" AND "Community dynamic*"
-yielded: 81
-
-"British Columbia" AND "forest*" AND "tree*" AND "seedling" AND "sap*" AND "Growth" AND "predat*"
-yielded: 63
-
-"British Columbia" AND "forest*" AND "tree*" AND "Community dynamic*" AND "seedling" AND "intra*" AND "competitive*"
-yielded: 32
+(description: "British Columbia" AND "forest*" AND "tree*" AND ("seedling" OR "germina*") AND ("diseas*" OR "pathogen*") AND ("growth" OR "surviv*" OR "mortality"))
+yielded: 140
 
 
 Helpful websites: 
