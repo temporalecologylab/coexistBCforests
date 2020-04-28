@@ -5,12 +5,61 @@ factors control tree community composition in BC forests
 (description: "British Columbia" AND "forest*" AND "tree*" AND "Community dynamic*" AND ("seedling" OR "germina*") AND ("growth" OR "surviv*" OR "mortality"))
 yielded: 37
 
+(description: "British Columbia" AND "forest*" AND "tree*" AND ("seedling" OR "germina*") AND "Community dynamic*" AND "compet*" AND ("intra*" OR "inter*"))
+yielded: 16
+
+(description: "British Columbia" AND "forest\*" AND "tree\*" AND "structure" AND "seedling\*" AND ("growth" OR "surviv\*") AND "stand\*" AND "ecology" AND "establish\*" AND "height" AND "BC" and "community" (NOT "gene\*" or "water\*"))
+yield: 123
 
 2. Find any relevant data that could help you with your Janzen-Connell questions.
 
+(description: forest\* AND "British Columbia" AND "seedling\*" AND "germinant\*" AND "pathogen" AND "Janzen\-Connell" OR "density dependence" OR "coexist\*" OR "disease" OR "Growth")
+yielded: 93
 
-(description: "British Columbia" AND "forest*" AND "tree*" AND ("seedling" OR "germina*") AND ("diseas*" OR "pathogen*") AND ("growth" OR "surviv*" OR "mortality"))
+
+(description: "British Columbia" AND "forest*" AND "tree*" AND ("seedling" OR "germina*") AND ("diseas*" OR "pathogen*") AND ("growth" OR "surviv*" OR "mortality") AND "Community" NOT "gene\*") 
+yielded: 63
+
+A. (description: "British Columbia" AND "forest*" AND "tree*" AND
+"communit*" AND ("seedling" OR "germina*") AND ("growth" OR "surviv*" OR
+"mortality"))
+
+yielded: 13
+
+B. (description: "British Columbia" AND "forest*" AND "communit*" AND
+("seedling" OR "germina*") AND ("growth" OR "surviv*" OR "mortality"))
+
+yielded: 13
+
+C. (description: "British Columbia" AND "forest*" AND "communit*" AND
+("seedling" OR "germina*"))
+
+yielded: 13
+
+D. (description: "British Columbia" AND "forest*" AND ("seedling" OR
+"germina*") AND ("diseas*" OR "pathogen*") AND ("growth" OR "surviv*" OR
+"mortality"))
+
+yielded: 146
+
+E. (description: "British Columbia" AND "forest*" AND "tree*" AND
+("seedling" OR "germina*") AND ("diseas*" OR "pathogen*") AND ("growth"
+OR "surviv*" OR "mortality"))
+
 yielded: 140
+
+forest\* AND "British Columbia" AND "seedling\*" AND "germinant\*" AND "pathogen" AND "Janzen\-Connell" OR "density dependence" OR "coexist\*" OR "disease" OR "Growth"
+yielded: 299
+
+forest\* AND "British Columbia" AND "seedling\*" AND "germinant\*" AND "pathogen" AND "Janzen\-Connell" OR "density dependence" OR "coexist\*" OR "disease" OR "Growth" OR "Survival"
+yielded: 299
+
+forest\* AND "British Columbia" AND "seedling\*" AND "germinant\*" AND "pathogen" AND "Janzen\-Connell" AND "coexist\*" OR "density dependence"  OR "disease" OR "Growth" OR "Survival"
+yielded: 2
+
+forest\* AND "British Columbia" AND "seedling\*" AND "germinant\*" AND "pathogen" AND "Janzen\-Connell" AND "Growth" OR "density dependence" OR "coexist\*"OR  "disease" OR "Survival" 
+yielded: 2
+
 
 
 Helpful websites: 
