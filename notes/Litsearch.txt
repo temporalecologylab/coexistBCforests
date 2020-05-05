@@ -11,6 +11,8 @@ yielded: 16
 (description: "British Columbia" AND "forest\*" AND "tree\*" AND "structure" AND "seedling\*" AND ("growth" OR "surviv\*") AND "stand\*" AND "ecology" AND "establish\*" AND "height" AND "BC" and "community" (NOT "gene\*" or "water\*"))
 yield: 123
 
+(title: "British Columbia" AND "forest*" AND "tree*" AND "Community dynamic*" AND ("seedling" OR "germina*") AND ("growth" OR "surviv*" OR "mortality") AND "mycorrhiz*") OR (description: "British Columbia" AND "forest*" AND "tree*" AND "Community dynamic*" AND ("seedling" OR "germina*") AND ("growth" OR "surviv*" OR "mortality") AND "mycorrhiz*")
+
 2. Find any relevant data that could help you with your Janzen-Connell questions.
 
 (description: forest\* AND "British Columbia" AND "seedling\*" AND "germinant\*" AND "pathogen" AND "Janzen\-Connell" OR "density dependence" OR "coexist\*" OR "disease" OR "Growth")
@@ -70,3 +72,33 @@ https://guides.jstor.org/c.php?g=475564&p=3258529
 
 https://library.leeds.ac.uk/info/1404/literature_searching/14/literature_searching_explained/4
 
+Final searches: 
+
+(description: "British Columbia" AND "forest*" AND "communit*" AND
+("seedling" OR "germina*"))
+
+yielded: 13
+
+(title: "British Columbia" AND "forest*" AND "communit*" AND
+("seedling" OR "germina*")) OR (description: "British Columbia" AND "forest*" AND "communit*" AND
+("seedling" OR "germina*"))
+
+yielded: 17
+
+(description: "British Columbia" AND "forest*" AND ("seedling" OR
+"germina*") AND ("diseas*" OR "pathogen*") AND ("growth" OR "surviv*" OR
+"mortality"))
+
+yielded: 146
+
+(title:"British Columbia" AND "forest*" AND ("seedling" OR
+"germina*") AND ("diseas*" OR "pathogen*") AND ("growth" OR "surviv*" OR
+"mortality")) OR (description: "British Columbia" AND "forest*" AND ("seedling" OR
+"germina*") AND ("diseas*" OR "pathogen*") AND ("growth" OR "surviv*" OR
+"mortality"))
+
+yielded: 157
+
+Theses: requirements
+To be included theses needed to focus on tree species in British Columbia
+(description: "British Columbia" AND "forest*" AND ("seedling" OR "germina*") AND ("growth" OR "surviv*" OR "mortality") OR ("diseas*" OR "pathogen*"))
