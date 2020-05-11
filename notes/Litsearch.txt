@@ -99,6 +99,18 @@ yielded: 146
 
 yielded: 157
 
+(description: "forest*" AND "regenerat\*" AND
+("seedling" OR "germina*"))
+
+
+
+
+
+
 Theses: requirements
 To be included theses needed to focus on tree species in British Columbia
 (description: "British Columbia" AND "forest*" AND ("seedling" OR "germina*") AND ("growth" OR "surviv*" OR "mortality") OR ("diseas*" OR "pathogen*"))
+
+
+
+
