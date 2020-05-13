@@ -99,17 +99,9 @@ yielded: 146
 
 yielded: 157
 
-(description: "forest*" AND "regenerat\*" AND
-("seedling" OR "germina*"))
-
-
-
-
-
 
 Theses: requirements
-To be included theses needed to focus on tree species in British Columbia
-(description: "British Columbia" AND "forest*" AND ("seedling" OR "germina*") AND ("growth" OR "surviv*" OR "mortality") OR ("diseas*" OR "pathogen*"))
+To be included theses needed to specifically study a tree species in mainland British Columbia. The thesis need to contain data on either tree seedling growth or mortality. Theses with experimental manipulations are only included if they contain data on a control treatment; while all theses with an observational experiment were included. If specific pathogens were observed, their effect on tree seedling growth or mortality had to be quantified. 
 
 
 
