@@ -103,6 +103,10 @@ yielded: 157
 Theses: requirements
 To be included theses needed to specifically study a tree species in mainland British Columbia. The thesis need to contain data on either tree seedling growth or mortality. Theses with experimental manipulations are only included if they contain data on a control treatment; while all theses with an observational experiment were included. If specific pathogens were observed, their effect on tree seedling growth or mortality had to be quantified. 
 
+Widest suggested search 
+(description: ("British Columbia*" OR "vancouver") AND ("seedling*" OR "germina*") AND ("growth" OR "surviv*" OR "mortality")) 
+
+yielded: 636 
 
 
 
