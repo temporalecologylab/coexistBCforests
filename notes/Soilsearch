@@ -1,0 +1,3 @@
+(description: ("soil*") AND ("growth" OR "surviv*" OR "mortality" OR "performan*") AND ("stand*" or "seedling*"))
+yield: 385
+
