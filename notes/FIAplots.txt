@@ -1,0 +1,21 @@
+1. Forest structure and species traits mediate projected recruitment declines in western US tree species by Dobrowski et al. 2015. Global Ecology and Biogeography 
+
+Methods: Used FIA plot data for 62 western tree species and obtained trait for 56 tree species. Traits included shade and drought tolerance (used differences between 95th and 5th percentile of three bioclimatic variables: minimum temperature (tmin), actual evapotranspiration (AET) and climatic water deficit (deficit))
+
+Results: (1) demographic niche differences for deficit are apparent at the xeric climatic margins of a broad range of species; (2) juveniles of shade- tolerant species are found in cooler temperatures than adults – at the most productive sites, they appear to be limited by competition for resources; and (3) minimum temperature does not appear to constrain recruitment in western forests to the same degree that water limitations do. Species that were most intermittenly shade and drought tolerant were shown to have the least projected rate of decline. Young et al. (2005) posit that the distribution of juveniles can be characterized by the intersection of the adult niche (where a seed source is), the dispersal niche (where seeds can disperse to) and the establishment niche (safe sites for germination and establishment).
+
+
+2. Plant geography upon the basis of functional traits: an example from eastern North American trees by Swenson and Weiser. 2010. Ecology 
+
+Methods: Used FIA plot data form roughly the meridian from Houston, Texas to central Minnesota, USA. Aggregated with trait data on maximum height, seed mass, leaf nitrogen content, and wood density taken from repositories and literature. Then found correlation between traits and eight climatic variables: mean annual temperature, maximum temperature, minimum temperature, temperature seasonality (standard deviation of monthly mean temperature), annual precipitation, precipitation in the wettest month, precipitation in the driest month, and precipitation seasonality (coefficient of variation in the monthly precipitation level). 
+
+Results: The results show that the mean trait value of eastern North American forest communities is generally correlated with the climate variables studied. However other variables not quantified (i.e., physiography, soil type, biotic interactions, and disturbance history) may be important determinants of these moments of the functional trait distribution in eastern North American tree communities. 
+
+
+3. High-Dimensional Coexistence of Temperate Tree Species: Functional Traits, Demographic Rates, Life-History Stages, and Their Physical Context by McMahon, Metcalf and Woodall. 2011. Plos One
+
+Methods: Used FIA records (http://fia.fs.fed.us/) across 505 plots in Wisconsin and used LMA and seed size traits from literature and KEW
+
+Results: All of the analyses in this study support a basic trend of a growth-survival trade-off among these temperate forest tree species. Light showed the strongest effects in the regressions, and not only best predicted growth, but interacted with the survival term, indicating an adjustment in the trade-off between growth and survival, depending on the light-levels experienced by the tree. Size of tree was also shown to covary between growth and survival for a majority of trees. 
+
+
