@@ -19,3 +19,20 @@ Methods: Used FIA records (http://fia.fs.fed.us/) across 505 plots in Wisconsin 
 Results: All of the analyses in this study support a basic trend of a growth-survival trade-off among these temperate forest tree species. Light showed the strongest effects in the regressions, and not only best predicted growth, but interacted with the survival term, indicating an adjustment in the trade-off between growth and survival, depending on the light-levels experienced by the tree. Size of tree was also shown to covary between growth and survival for a majority of trees. 
 
 
+4. Applications of the United States Forest Inventory and Analysis dataset: a review and future directions. Tinkham et al. 2018. Canadian Journal of Forestry Research
+
+Conducted a literature search of all papers that related to FIA plots (n=336) then removed all publications below four pages (n=287) then explicitly pulled papers with FIA data in analyses (n=195)
+
+Split papers in 6 categories: Carbon cycle applications, Forest products and forest growth applications, Climate applications, Forest health applications, Remote sensing applications* Introduction, design, and discussion. 
+
+Give a really good overview of what data FIA plots actually collect, in the section FIA sampling procedures. 
+
+Forest products and forest growth applications:
+Canham et al. (2006) and Papaik and Canham (2006) each conducted studies of forest competition in northern and southern New England forests, respectively. Each used data from FIA plots located across New England to parame- terize models to explore the effects of competition on growth and yield. Following this, Canham et al. (2013) focused on forest dis- turbances in the northeastern United States and developed a model to predict stand harvesting based on total tree biomass and the proportion of basal area that could theoretically be removed from the stand.
+
+Forest health applications:
+At finer scales, studies have attempted to use FIA data to explain stand dynamics related to forest health such as regeneration, competition, and mortality. In a cross-scale analysis, Puhlick et al. (2012) used FIA plots and field soil samples to determine which site and stand factors had the most significant impact on regeneration of ponderosa pine (Pinus ponderosa) stands in the southwestern USA. 
+
+One sentence seems to suggest that FIA measures amount of damage on trees
+
+
