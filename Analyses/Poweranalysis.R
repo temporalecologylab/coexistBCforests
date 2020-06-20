@@ -45,3 +45,7 @@ title("Sample Size Estimation for Correlation Studies\n
   Sig=0.05")
 legend("topright", title="Power", as.character(p),
        fill=colors)
+
+###### Alternative approach 
+#Linear model is biomass ~ soil type + sterilization + density
+
