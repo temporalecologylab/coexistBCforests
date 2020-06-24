@@ -6,6 +6,7 @@ setwd("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/")
 
 library(pwr)
 library(tidyverse)
+library(Hmisc)
 set.seed(1993)
 
 #range of effect size
@@ -68,15 +69,15 @@ density <- 50
 #Generating data for parameters 
 n <- 10000
 samplep<- sample(c(0,1), replace=TRUE, size=n)
-samplesoil <- as.data.frame(sample(samplep, replace = FALSE, size=10))
-samplesterilization <- as.data.frame(sample(samplep, replace = FALSE, size=10))
-sampledensity <- as.data.frame(sample(samplep, replace = FALSE, size=10))
+samplesoil <- as.data.frame(sample(samplep, replace = FALSE, size=10000))
+samplesterilization <- as.data.frame(sample(samplep, replace = FALSE, size=10000))
+sampledensity <- as.data.frame(sample(samplep, replace = FALSE, size=10000))
 
 
 #code for model
 
 HVOB <- (matrix(NA, nrow= nrow(samplesoil), ncol = 5))
-for (n in 1:10){
+for (n in 1:10000){
   HVOB[n,1]<- as.matrix(intercept + soiltype * samplesoil[n,] + sterilization * samplesterilization[n,]
                        + density * sampledensity[n,])
   HVOB[n,2]<- as.matrix(intercept)
@@ -96,8 +97,46 @@ HVOB <- as.data.frame(HVOB)
     density = V5
   )
 
-test <- lm(Biomass~ soiltype + sterilization + density, data = HVOB)
-summary (test)  
+sd(HVOB$Biomass)
+mean(HVOB$Biomass)
+
+data10 <- as.data.frame(rnorm(n = 10, mean = HVOB[1:10, 1], sd = 47))
+test10<- cbind(HVOB[1:10,],data10)
+test10 <- test10 %>%
+  rename(
+  data  = 'rnorm(n = 10, mean = HVOB[1:10, 1], sd = 47)'
+  )
+lm(Biomass~ data, data = test10)
+summary(Biomass~ data, data = test10)
+
+
+data100 <- as.data.frame(rnorm(n = 100, mean = HVOB[1:100, 1], sd = 47))
+test100 <- cbind(HVOB[1:100,],data100)
+test100 <- test100 %>%
+  rename(
+    data  = 'rnorm(n = 100, mean = HVOB[1:100, 1], sd = 47)'
+  )
+
+lm(Biomass~ data, data = test100)
+summary(Biomass~ data, data = test100)
+
+
+data1000 <- as.data.frame(rnorm(n = 1000, mean = HVOB[1:1000, 1], sd = 47))
+test1000 <- cbind(HVOB[1:1000,],data1000)
+test1000 <- test1000 %>%
+  rename(
+    data  = 'rnorm(n = 1000, mean = HVOB[1:1000, 1], sd = 47)'
+  )
+
+lm(Biomass~ data, data = test1000)
+summary(Biomass~ data, data = test1000)
 
 
 
+
+
+
+
+
+
+data10000 <- rnorm(n = 1000, mean = HVOB[1:10000, 1], sd = 47)
