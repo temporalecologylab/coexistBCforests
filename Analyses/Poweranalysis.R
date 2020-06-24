@@ -5,6 +5,8 @@ options(stringsAsFactors=FALSE)
 setwd("~/Documents/GitHub/Coexistence-in-BC-Forests/Analyses/")
 
 library(pwr)
+library(tidyverse)
+set.seed(1993)
 
 #range of effect size
 r <- seq(0.01,1,0.01)
@@ -48,4 +50,54 @@ legend("topright", title="Power", as.character(p),
 
 ###### Alternative approach 
 #Linear model is biomass ~ soil type + sterilization + density
+# biomass= intercept + soil type + sterilization + density
+
+intercept <- -50
+soiltype <- 75
+sterilization <- 25
+density <- 50
+
+
+#soiltype == 0 = conspecific
+#soiltype == 1 = heterspecific
+#sterilization == 0 = unsterilized soil
+#sterilization == 1 = sterilized soil
+#density == 0 = high density 
+#density == 1 = low density
+
+#Generating data for parameters 
+n <- 10000
+samplep<- sample(c(0,1), replace=TRUE, size=n)
+samplesoil <- as.data.frame(sample(samplep, replace = FALSE, size=10))
+samplesterilization <- as.data.frame(sample(samplep, replace = FALSE, size=10))
+sampledensity <- as.data.frame(sample(samplep, replace = FALSE, size=10))
+
+
+#code for model
+
+HVOB <- (matrix(NA, nrow= nrow(samplesoil), ncol = 5))
+for (n in 1:10){
+  HVOB[n,1]<- as.matrix(intercept + soiltype * samplesoil[n,] + sterilization * samplesterilization[n,]
+                       + density * sampledensity[n,])
+  HVOB[n,2]<- as.matrix(intercept)
+  HVOB[n,3] <- as.matrix(soiltype * samplesoil[n,])
+  HVOB[n,4] <- as.matrix(sterilization * samplesterilization[n,])
+  HVOB[n,5] <- as.matrix(density * sampledensity[n,])
+  
+} 
+
+HVOB <- as.data.frame(HVOB) 
+ HVOB <- HVOB %>%
+  rename(
+    Biomass = V1 ,
+    intercept = V2,
+    soiltype = V3,
+    sterilization = V4,
+    density = V5
+  )
+
+test <- lm(Biomass~ soiltype + sterilization + density, data = HVOB)
+summary (test)  
+
+
 
