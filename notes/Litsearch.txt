@@ -100,13 +100,15 @@ yielded: 146
 yielded: 157
 
 
-Theses: requirements
-To be included theses needed to specifically study a tree species in British Columbia (including Vancouver island). The thesis need to contain data on either tree seedling growth or mortality. Theses with experimental manipulations are only included if they contain data on a control treatment; while all theses with an observational experiment were included. If specific pathogens were observed, their effect on tree seedling growth or mortality had to be quantified. 
-
 Widest suggested search 
 (description: ("British Columbia*" OR "vancouver") AND ("seedling*" OR "germina*") AND ("growth" OR "surviv*" OR "mortality")) 
 
 yielded: 636 
+
+
+Theses: requirements
+To be included theses needed to specifically study a tree species in British Columbia (including Vancouver island). The thesis need to contain data on either tree seedling growth or mortality. Theses with experimental manipulations are only included if they contain data on a control treatment; while all theses with an observational experiment were included. If specific pathogens were observed, their effect on tree seedling growth or mortality had to be quantified. Theses were excluded if they included any management treatments (such as thinning, prescribed burning and fertilizer addition) that altered abiotic conditions for tree seedlings during the course of the experiment. The only exception to this rule was if either specific nutrients (i.e. nitrogen or sulphur) were added or specifc differences between species' growth/mortality was measured. Theses on belowground interactions were excluded if they only described the differences between fungal communities for different species/sites without linking them to specific differences in tree seedling growth or survival. Theses that measured variation within a single species, conducted model comparisons based on prior data without including height or mortality as parameters and landscape level models that focussed on between site differences without linking them to demographic differences were all excluded. 
+
 
 
 

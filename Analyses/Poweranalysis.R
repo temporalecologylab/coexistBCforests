@@ -100,43 +100,36 @@ HVOB <- as.data.frame(HVOB)
 sd(HVOB$Biomass)
 mean(HVOB$Biomass)
 
-data10 <- as.data.frame(rnorm(n = 10, mean = HVOB[1:10, 1], sd = 47))
+data10 <- as.data.frame(rnorm(n = 10, mean = HVOB[1:10, 1], sd = 15))
 test10<- cbind(HVOB[1:10,],data10)
 test10 <- test10 %>%
   rename(
-  data  = 'rnorm(n = 10, mean = HVOB[1:10, 1], sd = 47)'
+  data  = 'rnorm(n = 10, mean = HVOB[1:10, 1], sd = 15)'
   )
-lm(Biomass~ data, data = test10)
-summary(Biomass~ data, data = test10)
+lm(data ~ soiltype + sterilization + density, data = test10)
+summary(lm(data ~ soiltype + sterilization + density, data = test10))
 
 
-data100 <- as.data.frame(rnorm(n = 100, mean = HVOB[1:100, 1], sd = 47))
+data100 <- as.data.frame(rnorm(n = 100, mean = HVOB[1:100, 1], sd = 15))
 test100 <- cbind(HVOB[1:100,],data100)
 test100 <- test100 %>%
   rename(
-    data  = 'rnorm(n = 100, mean = HVOB[1:100, 1], sd = 47)'
+    data  = 'rnorm(n = 100, mean = HVOB[1:100, 1], sd = 15)'
   )
 
-lm(Biomass~ data, data = test100)
-summary(Biomass~ data, data = test100)
+lm(data ~ soiltype + sterilization + density, data = test100)
+summary(lm(data ~ soiltype + sterilization + density, data = test100))
 
 
-data1000 <- as.data.frame(rnorm(n = 1000, mean = HVOB[1:1000, 1], sd = 47))
+data1000 <- as.data.frame(rnorm(n = 1000, mean = HVOB[1:1000, 1], sd = 15))
 test1000 <- cbind(HVOB[1:1000,],data1000)
 test1000 <- test1000 %>%
   rename(
-    data  = 'rnorm(n = 1000, mean = HVOB[1:1000, 1], sd = 47)'
+    data  = 'rnorm(n = 1000, mean = HVOB[1:1000, 1], sd = 15)'
   )
 
-lm(Biomass~ data, data = test1000)
-summary(Biomass~ data, data = test1000)
+lm(data ~ soiltype + sterilization + density, data = test1000)
+summary(lm(data ~ soiltype + sterilization + density, data = test1000))
 
 
-
-
-
-
-
-
-
-data10000 <- rnorm(n = 1000, mean = HVOB[1:10000, 1], sd = 47)
+data10000 <- rnorm(n = 1000, mean = HVOB[1:10000, 1], sd = 15)
