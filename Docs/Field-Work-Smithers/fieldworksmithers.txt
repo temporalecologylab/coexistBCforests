@@ -1,0 +1,9 @@
+Field Work Plan 
+
+Set up as many 20 by 20 meter plots as possible in a three week field season. This will be done using a compass and a 60 meter measuring tape. Each plot will essentially be a large square. Plots will have to be a minimum of 50 meters apart. Each plot will have a GPS reference point for each corner. 
+
+We will start by tagging all adult trees (trees above 1.37 meters) inside the plots and measuring diameter at breast height (DBH). This will give us data on stand density for species within plots. 
+
+Within each plot we set up three 0.5 meter by 0.5 meter seedling/germinant plots. Inside each plot seedling height will be measured and germinant counts will be made. For each seedling the distance to the closest conspecific will be measured. Each seedling/germinant plot will also have a GPS reference point at each corner of the plot. In addition, to mark the corner of these plots flags will be used. 
+
+In the following field season we will come back to each plot and remeasure seedling height and retake germinant counts. 
