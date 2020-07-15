@@ -1,0 +1,29 @@
+Forestry Plots 
+
+Canada's National Forestry Inventory Plots 
+
+Two types of plots are used for canada's National Forestry Inventory Plots, photo plots and ground plots. 
+
+Photo plots are plots which are 20km by 20km and are monitored using either satellite or drone photos. In the past photos were taken with cameras and digitally stored. Photo plots are used to measure changes in: current land cover, tree species composition, age and volume (cubic metres per hectare), disturbance activity, land use changes (such as reforestation, afforestation and deforestation), mortality for trees, access and human influence and soil erosion.  
+
+Ground plot are chosen using the photo plots. One in every ten photo plots is chosen to serve as a ground plot. Ground plots measure five different attributes: Site assessments, woody debris, soil attributes, Tree, shrub, herb, and bryoid measurements, and growth and change measurements. The types of current data that can be reported include: Mensurational information, such as the volume per hectare and basal area of the timber, average age and height of the dominant trees in the plot, average stem diameter, species presence, relative amounts of shrubs and herbs and shrub and herb biomass. Based on further investigation Janzen-Connell patterns can't be tested because coordinates of specific trees have a error range of upto 1km. In addition measurements on germinants and seedlings is also omitted, although some seedlings could fit into the small tree category if they are larger than 1.3 meters in height and have a diameter at breast height measurement of nine centimeters or less. 
+
+Resources: 
+https://cfs.nrcan.gc.ca/publications/download-pdf/29402
+https://www2.gov.bc.ca/gov/content/industry/forestry/managing-our-forest-resources/forest-inventory/national-forest-inventory-program
+https://nfi.nfis.org/en/
+
+
+Center for Tropical Forest Science (CTFS) plots includes 47 plots globally (specific locations can be found here: https://web.archive.org/web/20120820042927/http://www.ctfs.si.edu/plots/summary/). The overall goal is to monitor the growth and survival of about 4.5 million trees of approximately 8,500 species. A majority of plots use Condit's Tropical Forest Census Plots: Methods and Results from Barro Colorado Island, Panama and a Comparison with Other Plots as a framework of setting up plots. From the information I can gather tree abundance, height, tree functional traits (which ones is still unclear), wood density, soil properties and a vareity of weather data is collected. As for seedling data only three plots seem to have any data which are the Barro Colorado Island Panana, and Estacion Biologica Yasuni Ecuador, and Luquillo Puerto Rico. These plots potentially could be used to answer questions about the Janzen-Connell hypothesis (https://web.archive.org/web/20120820041925/http://www.ctfs.si.edu/floss/). Functional trait data could be used to test the competition-colonization tradeoff hypothesis see (https://web.archive.org/web/20131216145551/http://www.ctfs.si.edu/data/documents/Traits_report_20060817.pdf). 
+
+Resources: 
+https://web.archive.org/web/20120818215020/http://www.ctfs.si.edu/
+
+
+ 
+
+
+
+
+
+
