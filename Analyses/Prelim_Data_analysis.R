@@ -37,7 +37,7 @@ FIELDDATA<- replace(FIELDDATA, FIELDDATA== "PICON", "PINCON")
 FIELDDATA<- replace(FIELDDATA, FIELDDATA== "AIBLAS", "ABILAS")
 
 #Aggregates DBH data by tree species and plot
-aggdata<- aggregate( FIELDDATA$`DBH (CM)` ~ FIELDDATA$Plot + FIELDDATA$tree_species, FIELDDATA, mean)
+aggdata<- aggregate( FIELDDATA$`DBH (CM)` ~ FIELDDATA$Plot + FIELDDATA$tree_species, FIELDDATA, sum)
 
 #Renames columns so that aggregate data and FIELDDATA match
 colnames(aggdata)[1] <- "Plot"
