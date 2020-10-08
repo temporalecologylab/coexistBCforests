@@ -133,3 +133,10 @@ summary(lm(data ~ soiltype + sterilization + density, data = test1000))
 
 
 data10000 <- rnorm(n = 1000, mean = HVOB[1:10000, 1], sd = 15)
+
+##############################################################
+res <- wp.regression(n = seq(10,300,10), p1 = 4, f2= 0.1, alpha= 0.05, power= NULL)
+
+res2.0 <- wp.regression(n = seq(10,300,10), p1 = 4, f2= 0.25, alpha= 0.05, power= NULL)
+
+res3.0 <- wp.regression(n = seq(10,300,10), p1 = 4, f2= 0.4, alpha= 0.05, power= NULL)
