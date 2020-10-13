@@ -45,7 +45,7 @@ temp_test = -7.5
 density <- c(0,1)
 temptreat <- c(0,1)
 intercepthere <- 30  # watch out of potentially reserved words in R ..
-    # I don't think 'intercept' or 'temp' are used in base, but they might be in other packages. 
+    # I don't think 'intercept' or 'temp' are used in base R, but they might be in other packages. 
 density_effect <- -5 # as in you LOSE 5 units of biomass in the high treatment
 temp_effect <- -7.5 # as in you LOSE 7.5 units of biomass in the high temp treatment
 denstemp_intxn <- 2 # as in when you have high density and high temp you GAIN 2 units of biomass
@@ -53,8 +53,8 @@ denstemp_intxn <- 2 # as in when you have high density and high temp you GAIN 2 
 reps_per_treatment <- 10 # 10 is always a good place to start (easy to do the math in your head and check your code)
 ntot <- length(density)*length(temptreat)*reps_per_treatment
 
-# Okay, so, I will need a dataframe with the following columns: density and biomass
-# For building experimental data I copy Dan Flynn's trick and use the gl command
+# Okay, so, I will need a dataframe with the following columns: density, temptreat (these are my two X data) and biomass (Y data)
+# For building experimental data I use expand.grid to get the factorial right
 factorialgrid <- expand.grid(x_density = c(0, 1), x_temp = c(0,1))
 
 df <- as.data.frame(factorialgrid[rep(seq_len(nrow(factorialgrid)), each = reps_per_treatment),])
