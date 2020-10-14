@@ -63,7 +63,12 @@ df$treatcombo = paste(df$x_density, df$x_temp, sep = "_")
 table(df$treatcombo) 
 
 # now we just need to build the y data ... I think you have all you need now, see where you get.
-#intercepthere + 
+# y follows from simple linear model ... 
+# y = a + b1*x1 + b2*x2 + b3(x1*x2)
+# a is the intercept and the b's are each a slope coefficient
+df$y_biomass <- intercepthere + density_effect*df$x_density + temp_effect*df$x_temp + denstemp_intxn*(df$x_density*df$x_temp)
+# I suggest you try adding one more effect (soil type or soil treat?) with all possible two-way interactions (send me your code when you're done).
+
 for(i in 1:nrow(df)){
 df$biomass[i] <- if (df$x_density[i] == 1 && df$x_temp[i] == 0){
  df$biomass[i] <- intercepthere + density_effect
