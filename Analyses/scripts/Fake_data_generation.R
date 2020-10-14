@@ -69,6 +69,26 @@ table(df$treatcombo)
 df$y_biomass <- intercepthere + density_effect*df$x_density + temp_effect*df$x_temp + denstemp_intxn*(df$x_density*df$x_temp)
 # I suggest you try adding one more effect (soil type or soil treat?) with all possible two-way interactions (send me your code when you're done).
 
+
+#### code for a two way interaction 
+#soil type is either 0 (heterospecific) or 1 (conspecific)
+soil_type <- c(0,1)
+soiltype_effect <- -10 #loses 10 units of biomass in conspecific soil
+densoil_intxn <- -12 #high density + conspecific soil causes a loss of 12 units of biomass
+tempsoil_intxn <- -4 #high temp + conspecific soil causes a loss of 4 units of biomass
+densoiltemp_intxn <- -0.5 #high temp + high density + conspecific soil causes a loss of 10 units of biomass
+
+ntot_2 <- length(density)*length(temptreat)*length(soil_type)*reps_per_treatment
+
+factorialgrid <- expand.grid(x_density = c(0, 1), x_temp = c(0,1), x_soil= c(0,1))
+
+df <- as.data.frame(factorialgrid[rep(seq_len(nrow(factorialgrid)), each = reps_per_treatment),])
+
+df$y_biomass <- intercepthere + density_effect*df$x_density + temp_effect*df$x_temp + denstemp_intxn*(df$x_density*df$x_temp) + 
+  soiltype_effect*df$x_soil + densoil_intxn * (df$x_density*df$x_soil) + tempsoil_intxn * (df$x_temp * df$x_soil) + 
+  densoiltemp_intxn * (df$x_density * df$x_temp * df$x_soil)
+
+
 for(i in 1:nrow(df)){
 df$biomass[i] <- if (df$x_density[i] == 1 && df$x_temp[i] == 0){
  df$biomass[i] <- intercepthere + density_effect
