@@ -76,7 +76,7 @@ soil_type <- c(0,1)
 soiltype_effect <- -10 #loses 10 units of biomass in conspecific soil
 densoil_intxn <- -12 #high density + conspecific soil causes a loss of 12 units of biomass
 tempsoil_intxn <- -4 #high temp + conspecific soil causes a loss of 4 units of biomass
-densoiltemp_intxn <- -0.5 #high temp + high density + conspecific soil causes a loss of 10 units of biomass
+densoiltemp_intxn <- -0.5 #high temp + high density + conspecific soil causes a loss of 0.5 units of biomass
 
 ntot_2 <- length(density)*length(temptreat)*length(soil_type)*reps_per_treatment
 
