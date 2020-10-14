@@ -63,8 +63,18 @@ df$treatcombo = paste(df$x_density, df$x_temp, sep = "_")
 table(df$treatcombo) 
 
 # now we just need to build the y data ... I think you have all you need now, see where you get.
-df$biomass <- intercepthere + ...
-
+#intercepthere + 
+for(i in 1:nrow(df)){
+df$biomass[i] <- if (df$x_density[i] == 1 && df$x_temp[i] == 0){
+ df$biomass[i] <- intercepthere + density_effect
+} else if (df$x_temp[i] == 1 && df$x_density[i] == 0) {
+  df$biomass[i] <- intercepthere + temp_effect
+} else if (df$x_temp[i] == 1 && df$x_density[i] == 1) {
+  df$biomass[i] <- intercepthere + denstemp_intxn 
+} else {df$biomass [i] <- intercepthere 
+}   
+}
+  
 # first stab 
 nreplicates <- 100
 london_grammar <- data.frame(matrix(NA, nrow= nreplicates))
@@ -83,3 +93,4 @@ for(i in 1:nreplicates){
 #does this even make sense?
 
 
+df$x_density == 0
