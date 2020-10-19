@@ -87,35 +87,3 @@ df <- as.data.frame(factorialgrid[rep(seq_len(nrow(factorialgrid)), each = reps_
 df$y_biomass <- intercepthere + density_effect*df$x_density + temp_effect*df$x_temp + denstemp_intxn*(df$x_density*df$x_temp) + 
   soiltype_effect*df$x_soil + densoil_intxn * (df$x_density*df$x_soil) + tempsoil_intxn * (df$x_temp * df$x_soil) + 
   densoiltemp_intxn * (df$x_density * df$x_temp * df$x_soil)
-
-
-for(i in 1:nrow(df)){
-df$biomass[i] <- if (df$x_density[i] == 1 && df$x_temp[i] == 0){
- df$biomass[i] <- intercepthere + density_effect
-} else if (df$x_temp[i] == 1 && df$x_density[i] == 0) {
-  df$biomass[i] <- intercepthere + temp_effect
-} else if (df$x_temp[i] == 1 && df$x_density[i] == 1) {
-  df$biomass[i] <- intercepthere + denstemp_intxn 
-} else {df$biomass [i] <- intercepthere 
-}   
-}
-  
-# first stab 
-nreplicates <- 100
-london_grammar <- data.frame(matrix(NA, nrow= nreplicates))
-for(i in 1:nreplicates){
-  soil_type_loop <- sample(soil_type, i, replace=TRUE)
-  soil_treatment_loop <- sample(soil_treatment, i, replace=TRUE)
-  density_loop <- sample(density, i, replace=TRUE)
-  temp_loop <-sample(temp, i, replace=TRUE) 
-  london_grammar[i,] <- intercept + (soil_type_test * soil_type_loop[i]) + (soil_treatment_test * soil_treatment_loop[i]) +
-    (density_test * density_loop[i]) + (temp_test * temp_loop[i])
-  
-}
-
-#how to figure out interaction values?
-#how to include these into the model?
-#does this even make sense?
-
-
-df$x_density == 0
