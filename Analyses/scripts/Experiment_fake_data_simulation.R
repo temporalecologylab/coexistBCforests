@@ -59,9 +59,18 @@ factorialgrid <- expand.grid(x_density = c(0, 1), x_temp = c(0,1), x_soiltype= c
 df <- as.data.frame(factorialgrid[rep(seq_len(nrow(factorialgrid)), each = reps_per_treatment),])
 
 #calculates the biomass based on treatments and interactions 
-df$y_biomass <- intercepthere + density_effect*df$x_density + temp_effect*df$x_temp + soiltype_effect*df$x_soiltype +
-  soiltreat_effect*df$x_soiltreat + densoiltype_intxn * (df$x_density * df$x_soiltype) + denstemp_intxn * (df$x_density * df$x_temp) +
-  densoiltreat_itxn * (df$x_density * df$x_soiltreat) + tempsoiltreat_intxn * (df$x_temp * df$x_soiltreat) +
-  tempsoiltype_intxn * (df$x_temp * df$x_soiltype) + soiltypesoiltreat_intxn * (df$x_soiltype * df$x_soiltreat) + 
-  densoiltypetemp_intxn * (df$x_density * df$x_soiltype * df$x_temp) + densoiltreattemp_intxn * (df$x_density * df$x_soiltreat * df$x_temp) + 
-  densoiltypesoiltreat_intxn * (df$x_density * df$x_soiltype * df$x_soiltreat) + all_intxn * (df$x_density * df$x_temp * df$x_soiltype * df$x_soiltreat)
+df$y_biomass <- intercepthere +
+    density_effect*df$x_density +
+    temp_effect*df$x_temp +
+    soiltype_effect*df$x_soiltype +
+    soiltreat_effect*df$x_soiltreat + # 4 main effects
+    densoiltype_intxn * (df$x_density * df$x_soiltype) +
+    denstemp_intxn * (df$x_density * df$x_temp) +
+    densoiltreat_itxn * (df$x_density * df$x_soiltreat) +
+    tempsoiltreat_intxn * (df$x_temp * df$x_soiltreat) +
+    tempsoiltype_intxn * (df$x_temp * df$x_soiltype) +
+    soiltypesoiltreat_intxn * (df$x_soiltype * df$x_soiltreat) + # 6 2-way intxns
+    densoiltypetemp_intxn * (df$x_density * df$x_soiltype * df$x_temp) +
+    densoiltreattemp_intxn * (df$x_density * df$x_soiltreat * df$x_temp) +
+    densoiltypesoiltreat_intxn * (df$x_density * df$x_soiltype * df$x_soiltreat) + # 3-way intxns
+    all_intxn * (df$x_density * df$x_temp * df$x_soiltype * df$x_soiltreat) # 1 4-way intxn
