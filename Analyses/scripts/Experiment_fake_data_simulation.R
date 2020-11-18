@@ -53,7 +53,7 @@ all_intxn <- -0.75
 
 
 #codes for number of replicates
-reps_per_treatment <- 10 # 10 is always a good place to start (easy to do the math in your head and check your code)
+reps_per_treatment <- 100 # 10 is always a good place to start (easy to do the math in your head and check your code)
 ntot <- length(density)*length(temptreat)*length(soil_type)*length(soil_treat)*reps_per_treatment
 
 #creates datae frame for a factorial design including all four treatments 
@@ -81,7 +81,7 @@ df$y_biomass <- intercepthere +
     all_intxn * (df$x_density * df$x_temp * df$x_soiltype * df$x_soiltreat)  # 1 4-way intxn
   
 # incorporating 15% error into y
-df$y_pred<- df$y_biomass + rnorm(ntot, error)
+df$y_pred <- rnorm(n = ntot, mean = df$y_biomass, sd = error)
 
 #Statistical model to test paramaters
-lm(y_pred~ x_density * x_temp * x_soiltype * x_soiltreat, data= df)
+fittedmodel <- lm(y_pred ~ x_density * x_temp * x_soiltype * x_soiltreat, data= df)
