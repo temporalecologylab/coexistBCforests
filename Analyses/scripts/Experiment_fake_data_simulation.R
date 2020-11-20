@@ -85,3 +85,35 @@ df$y_pred <- rnorm(n = ntot, mean = df$y_biomass, sd = error)
 
 #Statistical model to test paramaters
 fittedmodel <- lm(y_pred ~ x_density * x_temp * x_soiltype * x_soiltreat, data= df)
+
+## Putting parameters into a list so you can call all of them at once
+#suggestion from Geoff!
+param <- list(intercepthere = 50,
+              soiltype_effect = -10, #loses 10 units of biomass in conspecific soil
+              density_effect = -5, # as in you LOSE 5 units of biomass in the high treatment
+              temp_effect = -7.5, # as in you LOSE 7.5 units of biomass in the low temp treatment
+              soiltreat_effect = 5, # as in you Gain 10 units of biomass in the sterilized streatment
+              #### codes for interactions
+              densoiltype_intxn = -12, #high density + conspecific soil causes a loss of 12 units of biomass
+              denstemp_intxn = 2, # as in when you have high density and low temp you GAIN 2 units of biomass
+              densoiltreat_itxn = -1, #high density + sterilization causes a Loss of one unit of biomass
+              tempsoiltype_intxn = -4, #low temp + conspecific soil causes a loss of 4 units of biomass
+              tempsoiltreat_intxn = -2.5, #low temp + sterilization causes a loss of 2.5 units of biomass
+              soiltypesoiltreat_intxn = -1.5, #conspecific soil + sterilization causes a loss of 1.5 unites of biomass
+              densoiltypetemp_intxn = -0.5, #low temp + high density + conspecific soil causes a loss of 0.5 units of biomass
+              densoiltreattemp_intxn = 1, 
+              densoiltypesoiltreat_intxn = 2.5,
+              soiltreattempsoiltype_intxn = 0.5, 
+              all_intxn = -0.75)
+
+## Model estimates
+t(coef(fittedmodel))
+## True value
+t(param)
+### Looks good
+
+## What is estimated sigma?
+sigma(fittedmodel)
+## True sigma
+error
+
