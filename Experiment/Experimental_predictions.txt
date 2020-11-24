@@ -4,31 +4,34 @@ If the Janzen-Connell is structuring communities:
 
 1. Tree species will have more biomass/growth rates in heterospecific soil versus conspecific soil because of pathogenic fungi. You could observe this by observing growth rates of species planted in conspecific versus heterospecifc soil, or in other words soiltype effects parameter. 
 2. Tree species will have worse/lower growth rates in higher planted densities. You would observe this using the density_effect parameter.
-3. Tree species will have more biomass/growth rates in the lower temperature treatment as the temperature will be closer to the optimal for pathogenic fungi. You would observe this in the temp effect parameter.
+3. Tree species will have more biomass/growth rates in the lower temperature treatment as the temperature will be closer to the optimal for pathogenic fungi. You would observe this in the temp effect parameter. [EMW: Would be good to have citations for this in your proposal.]
 4. Removing soil pathogens---through sterilization---from soil will cause species performance (growth rate/biomass) to be similar. You would observe this using the soiltreat effect parameter. 
 5. Null model would be when there are no treatments and would show up as the intercept parameter in the model.
 
+[EMW: These are good above. The one thought I had is whether you need to show competition to show  the JC effect?]
 
 Interactions between predictions 
-1. Temperature treatment effects will only be seen if species is planted in conspecific soil as pathogens have to be present. This would be observed in any combination of interaction paramters where soiltype and temp effect are equal to 1.
+1. Temperature treatment effects will only be seen if species is planted in conspecific soil as pathogens have to be present. This would be observed in any combination of interaction parameters where soiltype and temp effect are equal to 1.
 2. High temperature will impact conspecific soil as the pathogens will be denatured. This would be observed in the interaction parameter tempsoiltype_intxn where soiltype would equal 1 and temp effect would be 0.
 3. Conspecific soil negative effects can be removed with high temperature or sterilization. This would be observed in any interaction parameters where soiltype would be 1, temp effect would be zero and soiltreat would be 1.
 4. Heterospecific soil will have no impact on species performance as no species specific pathogens will be present. This would be observed by comparing species performances when soiltype is either 1 or 0 while all other effects would not be present.
 5. High density treatment will always have a negative effect regardless of other treatments. This would be observed through comparing density_effect being 1 or 0, across all other interaction parameters.
 6. Sterilization will remove all other treatment effects other than density. This would be observed by comparing soiltreat effect being 1 or 0, across all other interaction parameters such a two-way, three-way or four way interactions.
 
+[EMW: temperature usually speeds up plant growth (at least up to a point, check basic plant physiology books to see some curves ... I think there is a good book by Larcher) ... how might you see that and tell it apart from your optimum-pathogen temperatures hypothesis?]
+
 
 If the mychrorizhae fungi are structuring communities: 
 
 1. Tree species will have more biomass/growth rates in conspecific soil versus heterospecific soil because of mychrorizhae fungi. You could observe this by observing growth rates of species planted in conspecific versus heterospecifc soil, or in other words soiltype effects parameter being 0 or 1. 
-2. Tree species will have worse/lower growth rates in higher planted densities. You would observe this using the density_effect parameter.
+2. Tree species will have worse/lower growth rates in higher planted densities. You would observe this using the density_effect parameter. [EMW: Why? Does this relate to the mychrorizhae fungi hypothesis? I don't actually know the answer, but you should before your quals.]
 3. Tree species will have more biomass/growth rates in the lower temperature treatment as the temperature will be closer to the optimal for pathogenic fungi. You would observe this in the temp effect parameter.
 4. Removing mychrorizhae fungi---through sterilization---from soil will cause species performance (growth rate/biomass) to be similar across soil type treatments. You would observe this using the soiltreat effect parameter. 
 5. Null model would be when there are no treatments and would show up as the intercept parameter in the model.
 
 Interactions between predictions
-1. Temperature treatment effects will only be seen if species is planted in conspecific soil as mychrorizhae fungi have to be present. This would be observed in any combination of interaction paramters where soiltype and temp effect are equal to 1.
-2. High temperature will impact conspecific soil as the mychrorizhae fungi will be denatured. This would be observed in the interaction parameter tempsoiltype_intxn where soiltype would equal 1 and temp effect would be 0. Similar performances of species should be seen across soiltype with denaturing. 
+1. Temperature treatment effects will only be seen if species is planted in conspecific soil as mychrorizhae fungi have to be present. This would be observed in any combination of interaction parameters where soiltype and temp effect are equal to 1.
+2. High temperature will impact conspecific soil as the mychrorizhae fungi will be denatured. This would be observed in the interaction parameter tempsoiltype_intxn where soiltype would equal 1 and temp effect would be 0. Similar performances of species should be seen across soiltype with denaturing. [EMW: You should have some references for this, including what temperature it happens at and add to your proposal.]
 3. Conspecific soil positive effects can be removed with high temperature or sterilization. This would be observed in any interaction parameters where soiltype would be 1, temp effect would be zero and soiltreat would be 1.
 4. Heterospecific soil will have a negative impact on species performance as no mychrorizhae fungi will be present. This would be observed by comparing species performances when soiltype is either 1 or 0 while all other effects would not be present.
 5. High density treatment will always have a negative effect regardless of other treatments. This would be observed through comparing density_effect being 1 or 0, across all other interaction parameters.
