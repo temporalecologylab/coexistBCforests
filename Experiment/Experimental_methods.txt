@@ -10,7 +10,7 @@ Treatments:
 6. Conspecific soil X low-density X high-temperature X unsterilized soil 
 7. Conspecific soil X low-density X low-temperature X sterilized soil 
 8. Conspecific soil X low-density X low-temperature X unsterilized soil 
-9. Heterospecific soil X high-density X high-temperature X sterilized soil 
+9.  Heterospecific soil X high-density X high-temperature X sterilized soil 
 10. Heterospecific soil X high-density X high-temperature X unsterilized soil 
 11. Heterospecific soil X high-density X low-temperature X sterilized soil 
 12. Heterospecific soil X high-density X low temperature X unsterilized soil 
@@ -19,37 +19,41 @@ Treatments:
 15. Heterospecific soil X low-density X low-temperature X sterilized soil 
 16. Heterospecific soil X low-density X low-temperature X unsterilized soil 
 
-Cold stratification for interior spruce: 
+Cold stratification for interior spruce (Ministry of Forests, Lands, Natural Resource Operations and Rural Development - Tree Seed Centre Internal Document): 
 
 •	fully submerge seed in regular tap water for 24 hours in a plastic bag or vial;  
 •	drain and surface dry at room temperature until free water has evaporated and seed moves freely;
 •	place in a plastic bag allowing a small amount of air exchange;
 •	place in the refrigerator for 21 days at 2-5 degrees C ;
-•	monitor seed during cold stratification to ensure it doesn't dry out;
+•	monitor seed during cold stratification to ensure it doesn't dry out, rot or germinate early;
 •	after this period is complete, the seed is ready to be sown.
 
 
-Cold stratification for subalpine fir:
+Cold stratification for subalpine fir (Ministry of Forests, Lands, Natural Resource Operations and Rural Development - Tree Seed Centre Internal Document):
 
 •	To prepare Abies for sowing, we use a "cold strat procedure": 
-•	 fully submerge seed in regular tap water for 48 hours in a plastic bag or vial;  
+•	fully submerge seed in regular tap water for 48 hours in a plastic bag or vial;  
 •	drain of free water;  
 •	place in a plastic bag allowing a small amount of air exchange;
 •	provide a cold strat in the refrigerator for 1 month at 2-5 degrees C at 45% moisture content;
 •	after 30 days dryback the seed to 30 – 35 % moisture content (+/- 3%);
 •	return the seed to cold strat for another 2 months;
+•   monitor seed during cold stratification to ensure it doesn't dry out, rot or germinate early
 •	after this period is complete, the seed is ready to be sown
 
 Germinants Methods:
 
-Once the seeds have been cold stratified, they will be placed in pots with sterile potting mix---filled halfway or 0.2373345 liters---and placed in a growth chamber for a week (specify what temperature/photoperiod). This is because we are not testing germination success but instead looking at species performance once fully germinated. After a week, I will put germinated seedlings into pots for experimental manipulation. Before I use the pots, I will disinfect with 98% alcohol for 30 seconds. 
+Once the seeds have been cold stratified, they will be placed in a flat with sterile potting mix and placed in a growth chamber for three weeks at 17.5 degrees C, 24hrs in the dark and 50% relative humidity. A three week germination period is based on standard seed testing trials (Li et al. 1994. Canadian Journal of Botany). Further both genuses---Abies and Picea---were shown to have a higher germination percentage in a dark treatment compared to a light treatment (Li et al. 1994. Canadian Journal of Botany). Although most seeds benefit from variable temperatures while germinating (see. Li et al. 1994. Canadian Journal of Botany and Hansen & Leiusson. 2008. Scandinavian Journal of Forest Research), we decided to germinate seeds in 17.5 degrees C as it represents the median value of both of our temperature treatments. 50% relative humidity was chosen as it refects the median value of similar studies (see. Grossnickle & Fan. 1999. Scandinavian Journal of Forest Research and Landhausser et al. 2001. Canadian Journal of Forest Research). Seeds will be watered until they are moist every three days (CFIA, methods and procedures for testing seed). After three weeks, I will put germinated seedlings into pots for experimental manipulation. Germination is defined for both species at the point the protruding radical is equal in size to seed coat (Anderson and Winteron, 1996, American Journal of Botany).
 
 Soil Methods: 
 
-I will sift soil collected from Alex Fraser---the sift will have a minimum of 1-cm between rings---this is to get rid of any rocks or other unwanted materials from the soil. After I have filtered the soil, I will return the soil to their respective buckets.  I will also sift the sterile potting mix with the same sift---once the sift has been cleaned with alcohol to prevent cross-contamination. Once I have filtered all the soil, I will autoclave half of all the soil at 211 degrees Celsius. This will give me my sterilized treatment. I will use a graduated cylinder to put even amounts of potting mix and soil collect from Alex Fraser together in each pot. Anytime soil is being handled, I will wear gloves to avoid cross-contamination.
+I will sift soil collected from Alex Fraser---the sieve will have a minimum of 1-cm between rings---this is to get rid of any rocks or other unwanted materials from the soil (Packer & Clay. 2000. Letters to Nature). Large roots will be cut to ensure they fit through the sieve. After I have filtered the soil, I will return the soil to their respective buckets.  I will also sift the sterile potting mix with the same sieve---once the sieve has been cleaned with alcohol to prevent cross-contamination. Once I have filtered all the soil, I will autoclave half of all the soil at 211 degrees Celsius for a minimum of 4 hours (Packer & Clay. 2000. Letters to Nature). This will give me my sterilized treatment. I will put equally weighed amounts of potting mix and soil collected from Alex Fraser together in each pot. Anytime soil is being handled, I will wear gloves to avoid cross-contamination.
 
 Experimental methods: 
-Once seeds have germinated, I will weigh the seedlings for the initial biomass measurement. Once I have weighed the seedlings, I will put the seedlings into their pots for the rest of the experiment. This experiment has 16 treatments in total, and I will label each pot using ducktape and a sharpie with the respective treatment, replicate number, and species. I will keep track of where each pot is relative to others. I will separate each treatment based on species, temperature, and soil treatment (conspecific/heterospecific); for example, I will separate interior spruce and subalpine fir seedlings into different growth chambers. I will set two out of the four growth chambers to 10 degrees C. In contrast, I will set the other two growth chambers to 25 degrees C. I will keep soil types (conspecific/heterospecific) together; for example, heterospecific fir soil is the same as conspecific spruce soil thus, they can be present in the same growth chamber without cross-contamination. Within each growth chamber, I will separate sterilized soil from un-sterilized soil. The experiment will last six weeks; I will change each pot's placement halfway through the experiment.  I will water each pot every two days with the same amount of water measured using a graduated cylinder and deionized water. At the end of the experiment, I will reweigh each seedling to find out the final biomass.
+
+Once seeds have germinated and the soil is ready, I will weigh the seedlings for the initial biomass measurement. Once I have weighed the seedlings, I will put the seedlings into their pots for the rest of the experiment. This experiment has 16 treatments (see treatments above) in total, and I will label each pot using ducktape and a sharpie with the respective treatment, replicate number, and species. I will keep track of where each pot is relative to others. I will separate each treatment based temperature; for example, I will set one out of the two growth chambers to 10 degrees C. In contrast, I will set the other growth chambers to 25 degrees C. The growth chamber will be set to a 12 hour day and 12 hour night photoperiod (Chiang et al. 2018. Forests and Webber et al. 2005. Tree Physiology). Half way into the experiment---5 weeks---I will change the temperature of the growth chambers and move pots across chambers to avoid chamber bias (Kueppers et al. 2017. Forests). Further, I will rotate pot position---every week---to account for any possible spatial differences within a growth chamber (Landhauser et al. 2001. Canadian Journal of Forest Research). I will water each pot every two days until moist (CFIA, methods and procedures for testing seed). At the end of the experiment, I will reweigh each seedling to find out the final biomass. I will also measure and record height of seedlings each week. Finally, I will measure the dried biomass of seedlings once they have been put in a drying oven at 70 degrees C for 72 hours (Perez-Harguindeguy et al. 2013. Australian Journal of Botany). 
+
+
 
 
 
