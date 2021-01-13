@@ -11,14 +11,15 @@ End cold stratification for Picea: March 15th 2021
 Start Seed Germination: March 15th 2021
 End Seed germination: April 5th 2021
 Take Biomass of each seed used: April 5th 2021
-Start experiment: April 5th 2021
-Switch growth chamber temperature: May 10th 2021 (discuss this with Lizzie!)
-Change placement of pots: Weekly from April 12th to 14th June
-Height measurements of seedlings: Weekly from April 12th to 14th June
-End experiment: 14th June 2021 (discuss this with Lizzie!)
-Biomass measurement: 14th June 2021
-Put seeds in Oven: 15th June 2021
-Measure Oven dried Biomass: 18th June 2021
-Earliest Date Growth chambers are needed: March 15th 2021 (discuss this with Lizzie!)
+Start experiment: April 5th 2021 
+Switch growth chamber temperature: Every four weeks (May 3rd, May 31st, June 28th)
+Change placement of pots: Weekly from April 12th to 28th June
+Height measurements of seedlings: Weekly from April 12th to 28th June
+Soil Moisture measurements of pots: Weekly from April 12th to 28th June
+End experiment: 28th June 2021 
+Biomass measurement: 28th June 2021
+Put seeds in Oven: 29th June 2021
+Measure Oven dried Biomass: 2 July 2021
+Earliest Date Growth chambers are needed: March 15th 2021
 Start field soil prep: March 22nd 2021
 Start Pot prep: March 29th 2021
