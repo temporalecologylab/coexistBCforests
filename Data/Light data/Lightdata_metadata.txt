@@ -1,4 +1,8 @@
 Light data metadata
 This was started in September 2019
 Darwin Shikra Sodhi Collected this data
-All these files are the output files from the LiCor that Jonathan purchased, The cleaning and analysis of this data can be found in the scripts folder! 
+All these files are the output files from the LiCor 180 that Jonathan purchased, The cleaning and analysis of this data can be found in the scripts folder! 
+
+Each xlxd file includes the time and serial number 
+The important measurements start at 380nm and end at 780nm and tell you how much light is detected at that wavelength. 
+For full list of what the other measurements mean please consult the manual (with Jonathan)
