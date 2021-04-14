@@ -1,0 +1,4 @@
+Light data metadata
+This was started in September 2019
+Darwin Shikra Sodhi Collected this data
+All these files are the output files from the LiCor that Jonathan purchased, The cleaning and analysis of this data can be found in the scripts folder! 
