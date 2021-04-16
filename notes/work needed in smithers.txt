@@ -1,0 +1,9 @@
+Tasks to be completed on smither's plots (April 16th 2021)
+
+1. Removed the tags for sites no longer in use, you can find this information on Smither's waypoints excel sheet
+2. Remeasure height for seedlings that survived from the previous year, this information can be found on SEEDLINGDATA.XlSX if a seedling is no longer alive you can record height as zero. 
+3. Percent cover for each germinant plot including species such as moss, ferns, germinants, seedlings and adult trees. For percent cover you want to do this is pairs with both observers agreeing how much 3D volume is taken up by each species. Percent cover values can be over 100% and usually are done in 5% increments while the smaller amounts can go from 0.1-1% in 0.1 increments.
+4. Find out soil type using this: https://www.gardeners.com/how-to/what-type-of-soil-do-you-have/9120.html
+5. Measure soil moisture for each subplot, the best way to do this is measure soil moisutre at each corner and then once in the middle for a total of five measurements for each subplot. if it has rained it is standard procedure to wait at least forty-eight hours before recording soil moisture. If possible measuring soil moisture mutiple times is preferred. 
+6. Measuring PAR readings using the LiCor 180 that Jonathan owns, when taking measurements for each time a measurement is taken you also need to measure ambient light in 0% tree cover, this helps with calibrations and ensures your irridance readings are true. For each measurement taken please write down the extact time of the measurement and if it is a subplot or ambient light reading. For subplot readings please ensure you write down the exact time that this was done, the time of each readings can be found on the LiCor device. 
+7. 
