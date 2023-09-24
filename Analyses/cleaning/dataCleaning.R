@@ -53,14 +53,63 @@ noGermSub1 <- subset(noGermSub, Plot < 9)
 noGermSub1$Plot <- as.factor(noGermSub1$Plot)
 noGermSub1$Sub_plot <- as.factor(noGermSub1$Sub_plot)
 
-p <- ggplot(data = noGermSub1, aes(x= Year, y= Germ)) + geom_line(aes(colour=Sub_plot)) + theme(panel.grid.major = element_blank(), panel.background = element_blank(), panel.grid.minor = element_blank(),panel.border = element_rect(colour = "black", fill = NA))
- p + facet_grid(vars(Plot), vars(Sub_plot))
- 
+pdf("Analyses/figures/GermNoPart1Lumped.pdf", width = 3, height = 8)
+p <- ggplot(data = noGermSub1, aes(x= Year, y= Germ)) + geom_line(aes(colour=Sub_plot)) + theme(panel.grid.major = element_blank(), panel.background = element_blank(), panel.grid.minor = element_blank(),panel.border = element_rect(colour = "black", fill = NA)) +
+  labs (y = "No Germinants",
+        col = "Sub plot")
+ p + facet_grid(vars(Plot)#, vars(Sub_plot))
+                )+ theme(panel.spacing.x = unit(2, "lines"))
+dev.off() 
+
 noGermSub2 <- subset(noGermSub, Plot > 8)
 noGermSub2$Plot <- as.factor(noGermSub2$Plot)
 noGermSub2$Sub_plot <- as.factor(noGermSub2$Sub_plot)
- 
- p <- ggplot(data = noGermSub2, aes(x= Year, y= Germ)) + geom_line(aes(colour=Sub_plot)) + theme(panel.grid.major = element_blank(), panel.background = element_blank(), panel.grid.minor = element_blank(),panel.border = element_rect(colour = "black", fill = NA))
- p + facet_grid(vars(Plot), vars(Sub_plot))
 
+pdf("Analyses/figures/GermNoPart2.pdf", width = 10, height = 8) # or 10
+ p <- ggplot(data = noGermSub2, aes(x= Year, y= Germ)) + geom_line(aes(colour=Sub_plot)) + theme(panel.grid.major = element_blank(), panel.background = element_blank(), panel.grid.minor = element_blank(),panel.border = element_rect(colour = "black", fill = NA))+
+   labs (y = "No Germinants",
+         col = "Sub plot")
+ p + facet_grid(vars(Plot), vars(Sub_plot)
+                ) + theme(panel.spacing.x = unit(2, "lines"))
+dev.off()
 # Use vars() to supply variables from the dataset:
+
+pdf("Analyses/figures/HistGermNo.pdf", width = 3, height = 3)
+hist(noGermSub$Germ, xlab = "Number Germinants per subplot")
+dev.off()
+
+# how many plots never had a germinant? How many lost germinants?
+change <- dat
+change20 <- subset(change, Plot < 15)
+change20$plotGerm <- change20$Count_2020 + change20$Count_2021 + change20$Count_2022 + change20$Count_2023
+change20$diff <- change20$Count_2023-change20$Count_2020
+
+change21 <- subset(change, Plot > 14)
+change21$plotGerm <- change21$Count_2021 + change21$Count_2022 + change21$Count_2023
+change21$diff <- change21$Count_2023-change21$Count_2021
+
+change <- rbind(change20, change21)
+change$count <- 1
+changeGerm <- aggregate(change [c("count")],
+          change[c("plotGerm")],
+          FUN = sum)
+
+changeDiff <- aggregate(change [c("count")],
+                       change[c("diff")],
+                       FUN = sum)
+
+barplot(changeGerm$count)
+
+pdf("Analyses/figures/BarplotGermSurvival.pdf", width = 3, height = 3)
+ggplot(data = changeGerm, aes (x= plotGerm, y = count)) +
+  geom_bar(stat ="identity") +
+  geom_text(aes(label=count), vjust=1.6, color="white", size=3.5) + theme(panel.grid.major = element_blank(), panel.background = element_blank(), panel.grid.minor = element_blank(),panel.border = element_rect(colour = "black", fill = NA)) +
+  labs (x= "Germinant Survival",
+       y= "Number of Germinants")
+dev.off()
+
+ggplot(data = changeDiff, aes (x= diff, y = count)) +
+  geom_bar(stat ="identity") +
+  geom_text(aes(label=count), vjust=1.6, color="white", size=3.5) + theme(panel.grid.major = element_blank(), panel.background = element_blank(), panel.grid.minor = element_blank(),panel.border = element_rect(colour = "black", fill = NA))
+
+temp <- subset(dat, Count_2020 == "0" & Count_2021 == "0"& Count_2022 == "0"& Count_2023 == "0")
