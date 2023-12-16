@@ -2,7 +2,7 @@
 JCMH,1,A,31,49,62,50,86,ABILAS,1,1,1,1,red spade,,
 JCMH,1,B,,0,,,,,0,0,0,0,,,
 JCMH,1,C,30,33,44,,92,ABILAS,1,1,1,0,yellow club,,
-JCMH,1,C,19,MAD,,MAD,110.5,ABILAS,1,0,0,0,white heart,,
+JCMH,1,C,19,MAD,MAD,MAD,110.5,ABILAS,1,0,0,0,white heart,,
 JCMH,1,D,,0,,,,,0,0,0,0,,,
 JCMH,1,E,710,MAD,,,110,ABILAS,1,0,0,0,blue heart,,tag was out of the ground
 JCMH,1,F,,0,,,,,0,0,0,0,,,
@@ -101,7 +101,7 @@ JCMH,10,A,18,21,30,MAD,60,ABILAS,1,1,1,0,green diamond ,,
 JCMH,10,B,80,99,110,113,103,ABILAS,1,1,1,1,orange club,,
 JCMH,10,C,20,MAD,,,36,ABILAS,1,0,0,0,blue spade,,
 JCMH,10,D,,0,,,,,0,0,0,0,,,
-JCMH,10,E,18,MAD,,MAD,38,ABILAS,1,0,0,0,yellow club,,
+JCMH,10,E,18,MAD,MAD,MAD,38,ABILAS,1,0,0,0,yellow club,,
 JCMH,10,E,30,30,40,35,56,ABILAS,1,1,1,1,green heart ,,
 JCMH,10,F,380,360,141,Dead,101,ABILAS,1,1,1,0,orange spade,,
 JCMH,10,F,370,390,465,506,69,ABILAS,1,1,1,1,orange diamond,,
@@ -114,7 +114,7 @@ JCMH,11,A,45,34,MAD,,134,ABILAS,1,1,0,0,orange diamond ,,
 JCMH,11,B,,0,,,,,0,0,0,0,,,
 JCMH,11,C,,0,,,,,0,0,0,0,,,
 JCMH,11,D,21,MAD,,,411,PICHYB,1,0,0,0,yellow spade,,
-JCMH,11,D,18,32,,MAD,193,ABILAS,1,1,0,0,green club,,a lot of debris
+JCMH,11,D,18,32,MAD,MAD,193,ABILAS,1,1,0,0,green club,,a lot of debris
 JCMH,11,E,320,355,480,356,108,ABILAS,1,1,1,1,white heart ,,
 JCMH,11,E,670,635,691,600,115,ABILAS,1,1,1,1,orange heart ,,
 JCMH,11,F,,0,,,,,0,0,0,0,,,
@@ -165,7 +165,7 @@ JCMH,14,C,,0,,,,,0,0,0,0,,,
 JCMH,14,D,,0,,,,,0,0,0,0,,,
 JCMH,14,E,360,370,390,398,93,ABILAS,1,1,1,1,blue heart,,
 JCMH,14,F,729,MAD,,,15,ABILAS,1,0,0,0,white club ,,no white club toothpick or large tree
-JCMH,15,A,,28,Dead,,370,ABILAS,0,1,0,0,blue heart,,dead/brown
+JCMH,15,A,,28,Dead,,370,ABILAS,NA,1,0,0,blue heart,,dead/brown
 JCMH,15,B,,44,55,58,280,ABILAS,NA,1,1,1,green diamond,,
 JCMH,15,B,,15,,,132,ABILAS,NA,1,0,0,white spade,,
 JCMH,15,C,,,,22,138,ABILAS,NA,0,0,1,white diamond,,

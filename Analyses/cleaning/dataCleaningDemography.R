@@ -113,3 +113,52 @@ ggplot(data = changeDiff, aes (x= diff, y = count)) +
   geom_text(aes(label=count), vjust=1.6, color="white", size=3.5) + theme(panel.grid.major = element_blank(), panel.background = element_blank(), panel.grid.minor = element_blank(),panel.border = element_rect(colour = "black", fill = NA))
 
 temp <- subset(dat, Count_2020 == "0" & Count_2021 == "0"& Count_2022 == "0"& Count_2023 == "0")
+
+# what about the plots with MAD or Dead?
+mad <- subset(dat,  Height_2021 == "MAD" | Height_2022 == "MAD" | Height_2023 == "MAD")
+
+mad$count <- 1
+madNo <- aggregate(mad [c("count")],
+                   mad[c("plotGerm")],
+                   FUN = sum)
+
+germ2020 <- subset(dat,  Height_2020 > 0)
+germ2021 <- subset(dat,  Height_2021 > 0)
+germ2022 <- subset(dat,  Height_2022 > 0)
+germ2023 <- subset(dat,  Height_2023 > 0)
+
+germNo20 <- nrow(germ2020)
+germNo21 <- nrow(germ2021)
+germNo22 <- nrow(germ2022)
+germNo23 <- nrow(germ2023)
+
+
+mad$count <- 1
+madNo <- aggregate(mad [c("count")],
+                   mad[c("plotGerm")],
+                   FUN = sum)
+
+require(plyr)
+mad20 <- count(mad, "Height_2021")
+mad21 <- count(mad, "Height_2022")
+mad22 <- count(mad, "Height_2023")
+
+madDead <- data.frame(year=c("2021","2022","2023"), count = c(mad20[10,2],mad21[8,2],mad22[5,2], 0,2,14), type = c("MAD","MAD","MAD","dead","dead","dead"), percent <- c((mad20[10,2]/germNo20)*100,(mad21[8,2]/germNo21)*100,(mad22[5,2]/germNo20)*100, NA,NA,NA))
+names(madDead) <- c("year","count","type","percent")
+madDead$percent <- round(madDead$percent, 1)
+
+pdf("Analyses/figures/numberDead.pdf", height = 5, width = 5)
+ggplot(data = madDead, aes (x= year, y = count)) +
+  geom_bar(stat ="identity", aes (fill = type), position = "dodge") + 
+  theme(panel.grid.major = element_blank(), panel.background = element_blank(), panel.grid.minor = element_blank(),panel.border = element_rect(colour = "black", fill = NA)) +
+  labs(x = "Year", y = "Count", cex =2)
+dev.off()
+
+
+pdf("Analyses/figures/percentDead.pdf", height = 5, width = 5)
+ggplot(data = madDead, aes (x= year, y = percent)) +
+  geom_bar(stat ="identity") + 
+  geom_text(aes(label=percent), vjust=1.6, color="white", size=3.5) +
+  theme(panel.grid.major = element_blank(), panel.background = element_blank(), panel.grid.minor = element_blank(),panel.border = element_rect(colour = "black", fill = NA)) +
+  labs(x = "Year", y = "Percent", cex =2)
+dev.off()
