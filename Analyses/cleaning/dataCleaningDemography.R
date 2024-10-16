@@ -36,9 +36,7 @@ ggplot(data = noGerm, aes(x=variable, y=value)) + geom_line(aes(colour=Plot))+
        y = "No Germinants")
 dev.off()
 
-# Site 6 and 14 have 18 germinates in 2020!
-
-# Now let's look into the sub plots!
+# Now let's look into the sub plots:
 noGermSub <- aggregate(dat [c("Count_2020","Count_2021","Count_2022","Count_2023")],
                     dat[c("Site","Plot","Sub_plot")],
                     FUN = sum)
@@ -90,6 +88,8 @@ change21$diff <- change21$Count_2023-change21$Count_2021
 
 change <- rbind(change20, change21)
 change$count <- 1
+
+
 changeGerm <- aggregate(change [c("count")],
           change[c("plotGerm")],
           FUN = sum)
@@ -101,10 +101,10 @@ changeDiff <- aggregate(change [c("count")],
 barplot(changeGerm$count)
 
 pdf("Analyses/figures/BarplotGermSurvival.pdf", width = 3, height = 3)
-ggplot(data = changeGerm, aes (x= plotGerm, y = count)) +
+ggplot(data = changeGerm[2:5,], aes (x= plotGerm, y = count)) +
   geom_bar(stat ="identity") +
   geom_text(aes(label=count), vjust=1.6, color="white", size=3.5) + theme(panel.grid.major = element_blank(), panel.background = element_blank(), panel.grid.minor = element_blank(),panel.border = element_rect(colour = "black", fill = NA)) +
-  labs (x= "Germinant Survival",
+  labs (x= "Number of years survived",
        y= "Number of Germinants")
 dev.off()
 
