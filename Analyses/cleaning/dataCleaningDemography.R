@@ -11,7 +11,7 @@ require(ggplot2)
 if(length(grep("lizzie", getwd())>0)) { 
   setwd("~/Documents/git/projects/treegarden/bccoexistence/")
 } else {
-setwd("~/Documents/github/Coexistence-in-BC-Forests")} 
+setwd("~/Documents/github/coexistBCforests")} 
 
 dat <- read.csv("Data/Janzen-Connell/SeedlingDATA2021-2023.csv",
                 na.strings=c("NA","NaN", " ","") )
@@ -126,12 +126,7 @@ ggplot(data = changeDiff, aes (x= diff, y = count)) +
 temp <- subset(dat, Count_2020 == "0" & Count_2021 == "0"& Count_2022 == "0"& Count_2023 == "0")
 
 # what about the plots with MAD or Dead?
-mad <- subset(dat,  Height_2021 == "MAD" | Height_2022 == "MAD" | Height_2023 == "MAD")
-
-mad$count <- 1
-madNo <- aggregate(mad [c("count")],
-                   mad[c("plotGerm")],
-                   FUN = sum)
+mad <- subset(change,  Height_2021 == "MAD" | Height_2022 == "MAD" | Height_2023 == "MAD")
 
 germ2020 <- subset(dat,  Height_2020 > 0)
 germ2021 <- subset(dat,  Height_2021 > 0)
@@ -142,12 +137,6 @@ germNo20 <- nrow(germ2020)
 germNo21 <- nrow(germ2021)
 germNo22 <- nrow(germ2022)
 germNo23 <- nrow(germ2023)
-
-
-mad$count <- 1
-madNo <- aggregate(mad [c("count")],
-                   mad[c("plotGerm")],
-                   FUN = sum)
 
 require(plyr)
 mad20 <- count(mad, "Height_2021")
