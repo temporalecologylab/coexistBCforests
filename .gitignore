@@ -1,3 +1,6 @@
 */.Rhistory
 */.Rapp.history
 */.RData
+*.DS_Store
+*.Rapp.history
+/notposting

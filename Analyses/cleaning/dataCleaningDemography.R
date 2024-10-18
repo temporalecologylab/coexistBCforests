@@ -6,7 +6,12 @@
 rm(list=ls()) 
 
 require(reshape2)
-setwd("~/Documents/github/Coexistence-in-BC-Forests")
+require(ggplot2)
+
+if(length(grep("lizzie", getwd())>0)) { 
+  setwd("~/Documents/git/projects/treegarden/bccoexistence/")
+} else {
+setwd("~/Documents/github/Coexistence-in-BC-Forests")} 
 
 dat <- read.csv("Data/Janzen-Connell/SeedlingDATA2021-2023.csv",
                 na.strings=c("NA","NaN", " ","") )
@@ -23,6 +28,12 @@ names(noGerm) <- c("Site", "Plot","2020", "2021","2022","2023")
 noGerm <- melt(noGerm, id.vars = c("Site", "Plot"))
 noGerm$variable <- as.integer(as.character(noGerm$variable))
 
+# Quick work below by Lizzie to look at 2024 data also
+dat2024 <- read.csv("Data/Janzen-Connell/SeedlingDATA2020_2024.csv",
+                na.strings=c("NA","NaN", " ","") )
+# Hmm, the count column is all empty. I will work on this; see temporalecologylab/coexistBCforests/issues/2
+
+# end work by Lizzie to look at 2024 data also
 
 plot(noGerm$variable, noGerm$value, col = as.factor(noGerm$Plot))
 
