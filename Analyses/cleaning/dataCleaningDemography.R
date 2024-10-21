@@ -1,8 +1,13 @@
-#Started Sept 19 2023 by D Loughnan
+# Started Sept 19 2023 by D Loughnan
 
 # aim of this code is to:
 # 1. explore and clean the data from several years of seedling survival observations
 # 2. Make some plots to help us decide what our next steps should be.
+
+# Note from Lizzie in Oct 2024: Would be nice to update this file so it scrapes the years off the columns names ...
+# ... and then does not need to be updated every year so much. 
+# See issue #2 for explanation of why this format of data is better than adding a year column and having one height column. 
+
 rm(list=ls()) 
 
 require(reshape2)
@@ -31,8 +36,7 @@ noGerm$variable <- as.integer(as.character(noGerm$variable))
 # Quick work below by Lizzie to look at 2024 data also
 dat2024 <- read.csv("Data/Janzen-Connell/SeedlingDATA2020_2024.csv",
                 na.strings=c("NA","NaN", " ","") )
-# Hmm, the count column is all empty. I will work on this; see temporalecologylab/coexistBCforests/issues/2
-
+# Okay, did not get so far ... 
 # end work by Lizzie to look at 2024 data also
 
 plot(noGerm$variable, noGerm$value, col = as.factor(noGerm$Plot))
