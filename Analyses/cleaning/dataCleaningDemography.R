@@ -30,14 +30,20 @@ noGerm <- aggregate(dat [c("Count_2020","Count_2021","Count_2022","Count_2023")]
           FUN = sum)
 names(noGerm) <- c("Site", "Plot","2020", "2021","2022","2023")
 
-noGerm <- melt(noGerm, id.vars = c("Site", "Plot"))
-noGerm$variable <- as.integer(as.character(noGerm$variable))
+
 
 # Quick work below by Lizzie to look at 2024 data also
 dat2024 <- read.csv("Data/Janzen-Connell/SeedlingDATA2020_2024.csv",
                 na.strings=c("NA","NaN", " ","") )
 # Okay, did not get so far ... 
 # end work by Lizzie to look at 2024 data also
+
+noGerm2024 <- aggregate(dat2024["Count"], dat2024[c("Site", "Plot")], FUN = sum)
+names(noGerm2024) <- c("Site", "Plot", "2024")
+noGerm <- merge(noGerm, noGerm2024, by = c("Site", "Plot"))
+
+noGerm <- melt(noGerm, id.vars = c("Site", "Plot"))
+noGerm$variable <- as.integer(as.character(noGerm$variable))
 
 plot(noGerm$variable, noGerm$value, col = as.factor(noGerm$Plot))
 
@@ -49,6 +55,20 @@ ggplot(data = noGerm, aes(x=variable, y=value)) + geom_line(aes(colour=Plot))+
         panel.background = element_blank(), axis.line = element_line(colour = "black"))+
   labs(x = "Year",
        y = "No Germinants")
+dev.off()
+
+# Plot total germinants from 2020-2024
+totalGermination <- aggregate(value ~ variable, data = noGerm, FUN = sum)
+
+colnames(totalGermination) <- c("Year", "Total_Germination")
+
+head(totalGermination)
+
+pdf("Analyses/figures/totalGerm.pdf", width = 5, height = 5)
+ggplot(totalGermination, aes(x = factor(Year), y = Total_Germination, fill = factor(Year))) + 
+  geom_bar(stat = "identity") + 
+  theme_classic() +
+  labs(x = "Year", y = "Total Germinates") + theme(legend.position = "none")
 dev.off()
 
 # Now let's look into the sub plots:
