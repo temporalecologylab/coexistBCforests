@@ -15,8 +15,11 @@ require(ggplot2)
 
 if(length(grep("lizzie", getwd())>0)) { 
   setwd("~/Documents/git/projects/treegarden/bccoexistence/")
+} else if (length(grep("Xiaomao", getwd())) > 0) {
+  setwd("C:/PhD/Project/coexistBCforests")
 } else {
-setwd("~/Documents/github/coexistBCforests")} 
+  setwd("~/Documents/github/coexistBCforests")
+}
 
 dat <- read.csv("Data/Janzen-Connell/SeedlingDATA2021-2023.csv",
                 na.strings=c("NA","NaN", " ","") )
@@ -35,12 +38,27 @@ names(noGerm) <- c("Site", "Plot","2020", "2021","2022","2023")
 # Quick work below by Lizzie to look at 2024 data also
 dat2024 <- read.csv("Data/Janzen-Connell/SeedlingDATA2020_2024.csv",
                 na.strings=c("NA","NaN", " ","") )
+dat2025 <- read.csv("Data/Janzen-Connell/SeedlingDATA2020_2025.csv",
+                    na.strings=c("NA","NaN", " ","") )
 # Okay, did not get so far ... 
 # end work by Lizzie to look at 2024 data also
 
 noGerm2024 <- aggregate(dat2024["Count"], dat2024[c("Site", "Plot")], FUN = sum)
+noGerm2025 <- aggregate(dat2025["Count"], dat2025[c("Site", "Plot")], FUN = sum)
 names(noGerm2024) <- c("Site", "Plot", "2024")
+names(noGerm2025) <- c("Site", "Plot", "2025")
 noGerm <- merge(noGerm, noGerm2024, by = c("Site", "Plot"))
+noGerm <- merge(noGerm, noGerm2025, by = c("Site", "Plot"))
+
+# Check the germination along elevation
+noGerm2025$Plot <- factor(noGerm2025$Plot, levels = c("3", "1", "2", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "16", "15", "17"))
+names(noGerm2025) <- c("Site", "Plot", "Germ")
+pdf("Analyses/figures/totalGermElevation.pdf", width = 5, height = 5)
+ggplot(noGerm2025, aes(x = factor(Plot), y = Germ, fill = factor(Plot))) + 
+  geom_bar(stat = "identity") + 
+  theme_classic() +
+  labs(x = "Plot (Along elevation)", y = "Total Germinates") + theme(legend.position = "none")
+dev.off()
 
 noGerm <- melt(noGerm, id.vars = c("Site", "Plot"))
 noGerm$variable <- as.integer(as.character(noGerm$variable))
